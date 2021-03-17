@@ -465,18 +465,78 @@ body{
 
 
 
-      .second-contents {
-        height: 608px;
-
+    .second-contents {
+      height: 608px;
+      background-color: #1B224C;
+      color: #ffffff;
+      text-align: center;
+      & h2{
+        font-size: 2rem;
+        padding-top: 3.625rem;
+        margin-bottom: 8.5625rem;
       }
-
-
-
-
-
-      .third-contents {
-        height: 1604px;
+      .wp{
+        display: flex;
+        width: 900px;
+        margin: 0 auto;
+        justify-content: space-between;
+        .wrapper{
+          width: calc(33.33333333% - 30px * 2 / 3);
+          p {
+            text-align: left;
+            line-height: 1.8rem;
+            margin-bottom: .7rem;
+            font-weight: bold;
+          }
+          .pic{
+            background-color: #FFFFFF;
+            height: 171px;
+            img{
+              width: 45%;
+              margin-top: 1.9rem;
+            }
+          }
+          .details{
+            margin-top: 1rem;
+            display: flex;
+            color: #1B224C;
+            height: 2rem;
+            & p{
+              padding-top: .1rem;
+              background: #F8F8F8 0% 0% no-repeat padding-box;
+              font-weight: unset;
+              margin-bottom: 0;
+            }
+            .works{
+              padding-left: .625rem;
+              width: 35.71%;
+              margin-right: .5rem;
+            }
+            .name{
+              width: 64.29%;
+              padding-left: .875rem;
+            }
+          }
+          p.feature{
+            padding-top: .1rem;
+            height: 2rem;
+            padding-left: .875rem;
+            font-weight: unset;
+            margin-top: .625rem;
+            background: #F8F8F8 0% 0% no-repeat padding-box;
+            color: #1B224C;
+          }
+        }
       }
+    }
+
+
+
+
+
+    .third-contents {
+      height: 1604px;
+    }
 
   }// main-containerのとじタグ
 }// mainのとじタグ

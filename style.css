@@ -504,6 +504,84 @@ body {
 
 .main-contents .main-container .second-contents {
   height: 608px;
+  background-color: #1B224C;
+  color: #ffffff;
+  text-align: center;
+}
+
+.main-contents .main-container .second-contents h2 {
+  font-size: 2rem;
+  padding-top: 3.625rem;
+  margin-bottom: 8.5625rem;
+}
+
+.main-contents .main-container .second-contents .wp {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 900px;
+  margin: 0 auto;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.main-contents .main-container .second-contents .wp .wrapper {
+  width: calc(33.33333333% - 30px * 2 / 3);
+}
+
+.main-contents .main-container .second-contents .wp .wrapper p {
+  text-align: left;
+  line-height: 1.8rem;
+  margin-bottom: .7rem;
+  font-weight: bold;
+}
+
+.main-contents .main-container .second-contents .wp .wrapper .pic {
+  background-color: #FFFFFF;
+  height: 171px;
+}
+
+.main-contents .main-container .second-contents .wp .wrapper .pic img {
+  width: 45%;
+  margin-top: 1.9rem;
+}
+
+.main-contents .main-container .second-contents .wp .wrapper .details {
+  margin-top: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: #1B224C;
+  height: 2rem;
+}
+
+.main-contents .main-container .second-contents .wp .wrapper .details p {
+  padding-top: .1rem;
+  background: #F8F8F8 0% 0% no-repeat padding-box;
+  font-weight: unset;
+  margin-bottom: 0;
+}
+
+.main-contents .main-container .second-contents .wp .wrapper .details .works {
+  padding-left: .625rem;
+  width: 35.71%;
+  margin-right: .5rem;
+}
+
+.main-contents .main-container .second-contents .wp .wrapper .details .name {
+  width: 64.29%;
+  padding-left: .875rem;
+}
+
+.main-contents .main-container .second-contents .wp .wrapper p.feature {
+  padding-top: .1rem;
+  height: 2rem;
+  padding-left: .875rem;
+  font-weight: unset;
+  margin-top: .625rem;
+  background: #F8F8F8 0% 0% no-repeat padding-box;
+  color: #1B224C;
 }
 
 .main-contents .main-container .third-contents {
