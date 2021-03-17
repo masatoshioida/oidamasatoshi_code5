@@ -371,20 +371,87 @@ body{
 
     .first-contents {
       height: 1341px;
+      width: 900px;
+      margin: 0 auto;
+      .first-container{
+        & h2{
+          font-size: 2rem;
+          padding-top: 3.5rem;
+          text-align: center;
+          padding-bottom: 3.5rem;
+        }
+        .first-content{
+          height: 240px;
+          background-color: lavenderblush;
+          margin-bottom: 60px;
+          .first-content-wrapper {
+            display: flex;
+            height: 100%;
 
-    }
+            .fl-content {
+              .feature{
+                width: 90px;
+                height: 30px;
+                font-size: 12px;
+                background: #F5A623 0% 0% no-repeat padding-box;
+                margin-bottom: 2rem;
+                color: #ffffff;
+                padding-top: .4rem;
+                padding-left: 1.6rem;
+              }
+              & h3 {
+                font-size: 2rem;
+                margin-bottom: 1.8rem;
+              }
+              & p {
+                width: 500px;
+              }
+            }
+            .fr-content {
+              width: 38.88%;
+              margin: 0 0 0 auto;
+              img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+              }
+            }
+          }
+        }
+        .second-content{
+          height: 240px;
+          background-color: lemonchiffon;
+          margin-bottom: 60px;
+        }
+        .third-content{
+          height: 240px;
+          background-color: lightblue;
+          margin-bottom: 93px;
+        }
+      } // first-containerのとじタグ
+      .price{
+        height: 217px;
+        background-color: lightcoral;
+      }
+    }// first-contentsのとじタグ
 
-    .second-contents {
-      height: 608px;
 
-    }
 
-    .third-contents {
-      height: 1604px;
-    }
-  }
-}
+      .second-contents {
+        height: 608px;
 
+      }
+
+
+
+
+
+      .third-contents {
+        height: 1604px;
+      }
+
+  }// main-containerのとじタグ
+}// mainのとじタグ
 
 .footer {
   height: 601px;
