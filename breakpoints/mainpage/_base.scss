@@ -380,15 +380,18 @@ body{
           text-align: center;
           padding-bottom: 3.5rem;
         }
-        .first-content{
+
+
+
+        .first-content, .second-content, .third-content{
           height: 240px;
           background-color: lavenderblush;
           margin-bottom: 60px;
-          .first-content-wrapper {
+          .first-content-wrapper, .second-content-wrapper, .third-content-wrapper {
             display: flex;
             height: 100%;
 
-            .fl-content {
+            .fl-content, .tl-content, .sr-content {
               .feature{
                 width: 90px;
                 height: 30px;
@@ -407,7 +410,7 @@ body{
                 width: 500px;
               }
             }
-            .fr-content {
+            .fr-content, .tr-content, .sl-content {
               width: 38.88%;
               margin: 0 0 0 auto;
               img {
@@ -422,6 +425,11 @@ body{
           height: 240px;
           background-color: lemonchiffon;
           margin-bottom: 60px;
+          .second-content-wrapper{
+            .sl-content{
+              margin: 0 auto 0 0;
+            }
+          }
         }
         .third-content{
           height: 240px;
@@ -432,6 +440,26 @@ body{
       .price{
         height: 217px;
         background-color: lightcoral;
+        background: transparent url('images/price.png') 0% 0% no-repeat padding-box;
+        background-position: center;
+        background-size: cover;
+        text-align: center;
+        color: #FFFFFF;
+        h3{
+          padding-top: 3.81rem;
+          font-size: 1.625rem;
+          margin-bottom: 1.6875rem;
+        }
+        a.button3{
+          display: inline-block;
+          border: 1px solid #FFFFFF;
+          border-radius: 30px;
+        width: 200px;
+        height: 50px;
+        padding-top: .8rem;
+        // padding-left: 2.9rem;
+        color: #FFFFFF;
+        }
       }
     }// first-contentsのとじタグ
 
