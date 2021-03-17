@@ -287,6 +287,70 @@ body{
   height: 604px;
   max-width: 1280px;
   margin: 0 auto;
+  background-color: #1B224C;
+  color: #ffffff;
+  text-align: center;
+  & h2{
+    font-size: 2rem;
+    padding-top: 3.8rem;
+    margin-bottom: 4rem;
+  }
+  .bottom-view-container{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 4.1rem;
+    & p{
+      line-height: 2rem;
+      margin-left: 1.7rem;
+      margin-right: 1.7rem;
+      letter-spacing: .05rem;
+    }
+  }
+  .bv-list{
+    margin: 0 auto;
+    position: relative;
+    width: 900px;
+    height: 248px;
+    background-color: #ffffff;
+    color: #1B224C;
+    // z-index: -2;
+    .bv-wrap{
+      position: absolute;
+      top: .68rem;
+      left: 1rem;
+      width: 868px;
+      height: 225px;
+      border: 5px solid #1B224C;
+      z-index: 10;
+    & h2{
+      padding-top: 0;
+      margin-bottom: 0;
+      font-size: 2rem;
+      line-height: 3rem;
+      margin-top: 1rem;
+    }
+    & h2 span{
+      font-size: 2rem;
+      position: relative;
+      font-weight: bold;
+    }
+    & h2 span::before{
+      content: "";
+      width: 102%;
+      height: 10px;
+      position: absolute;
+      bottom: 0px;
+      left: 0px;
+      z-index: -1;
+      background-color: #F5A623;
+    }
+    & p{
+      font-size: 1.125rem;
+      margin-top: 1.2rem;
+      line-height: 2rem;
+    }
+    }
+  }
   }
 }
 
