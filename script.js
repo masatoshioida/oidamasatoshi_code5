@@ -177,80 +177,80 @@ $(function(){
 
 
 
-$(function() {
-  let header     = $('.header');
-  let headerLogo = $('.logo');
-  let navLink    = $('.list_item');
-  let gnavBtn    = $('.gnav-btn');
+// $(function() {
+//   let header     = $('.header');
+//   let headerLogo = $('.logo');
+//   let navLink    = $('.list_item');
+//   let gnavBtn    = $('.gnav-btn');
 
-  $(window).scroll(function () {
-    // 画面をトップから30px以上スクロールした時
-    if ($(this).scrollTop() >= 30) {
-      // ヘッダーのbackground-colorを白に変更し、boxshadowをつける
-      header.css({'background':'rgba(250, 250, 250, 1)'});
-      // ロゴ画像を変更
-      headerLogo.attr('src', 'images/sub-header-logo.png').css('width', 200);
-      // aタグで囲った文字を黒に変更
-      navLink.find('a').css('color', '#333');
-      // ハンバーガーメニューを黒色に変更
-      gnavBtn.find('span').css({'background':'rgba(0, 0, 0, 1)'});
+//   $(window).scroll(function () {
+//     // 画面をトップから30px以上スクロールした時
+//     if ($(this).scrollTop() >= 30) {
+//       // ヘッダーのbackground-colorを白に変更し、boxshadowをつける
+//       header.css({'background':'rgba(250, 250, 250, 1)'});
+//       // ロゴ画像を変更
+//       headerLogo.attr('src', 'images/sub-header-logo.png').css('width', 200);
+//       // aタグで囲った文字を黒に変更
+//       navLink.find('a').css('color', '#333');
+//       // ハンバーガーメニューを黒色に変更
+//       gnavBtn.find('span').css({'background':'rgba(0, 0, 0, 1)'});
 
-      // spanタグで囲った文字を黒に変更
-      // navSpan.css('color', '#333');
-    } else {
-      // 画面がトップから100px以下の時は、上記と逆の処理を行う
-      header.css({'background':'rgba(250, 250, 250, 0)'});
-      headerLogo.attr('src', 'images/top-header-logo.png').css('width', 200);
-      navLink.find('a').css('color', '#fff');
-      gnavBtn.find('span').css({'background':'rgba(250, 250, 250, 1)'});
-      // navSpan.css('color', '#fff');
-      // navLink.hover(
-      //   function() {
-      //     $(this).find('a, span').css('color', '#fff');
-      //   },
-      //   function() {
-      //     $(this).find('a, span').css('color', '#fff');
-      //   }
-      // );
-    }
-  });
-});
-
-
-// スクロールするとロゴの色変更
-$(function () {
-  $(window).on("scroll", function () {
-    const sliderHeight = 30;
-    if (sliderHeight < $(this).scrollTop()) {
-      $(".js-header").addClass("headerScroll");
-    } else {
-      $(".js-header").removeClass("headerScroll");
-    }
-  });
-});
+//       // spanタグで囲った文字を黒に変更
+//       // navSpan.css('color', '#333');
+//     } else {
+//       // 画面がトップから100px以下の時は、上記と逆の処理を行う
+//       header.css({'background':'rgba(250, 250, 250, 0)'});
+//       headerLogo.attr('src', 'images/top-header-logo.png').css('width', 200);
+//       navLink.find('a').css('color', '#fff');
+//       gnavBtn.find('span').css({'background':'rgba(250, 250, 250, 1)'});
+//       // navSpan.css('color', '#fff');
+//       // navLink.hover(
+//       //   function() {
+//       //     $(this).find('a, span').css('color', '#fff');
+//       //   },
+//       //   function() {
+//       //     $(this).find('a, span').css('color', '#fff');
+//       //   }
+//       // );
+//     }
+//   });
+// });
 
 
-// お知らせのタブ切替
-$(function() {
-  $('.tab-item').click(function() {
+// // スクロールするとロゴの色変更
+// $(function () {
+//   $(window).on("scroll", function () {
+//     const sliderHeight = 30;
+//     if (sliderHeight < $(this).scrollTop()) {
+//       $(".js-header").addClass("headerScroll");
+//     } else {
+//       $(".js-header").removeClass("headerScroll");
+//     }
+//   });
+// });
 
-    //現在activeが付いているクラスからactiveを外す
-    $('.active').removeClass('active');
 
-    //クリックされたタブメニューにactiveクラスを付与。
-    $(this).addClass('active');
+// // お知らせのタブ切替
+// $(function() {
+//   $('.tab-item').click(function() {
 
-    //一旦showクラスを外す
-    $('.show').removeClass('show');
+//     //現在activeが付いているクラスからactiveを外す
+//     $('.active').removeClass('active');
 
-    //クリックしたタブのインデックス番号取得
-    const index = $(this).index();
+//     //クリックされたタブメニューにactiveクラスを付与。
+//     $(this).addClass('active');
 
-    //タブのインデックス番号と同じコンテンツにshowクラスをつけて表示する
-    $('.tab-content').eq(index).addClass('show');
-    $('.tab-content').hide().eq(index).fadeIn();
-  });
-});
+//     //一旦showクラスを外す
+//     $('.show').removeClass('show');
+
+//     //クリックしたタブのインデックス番号取得
+//     const index = $(this).index();
+
+//     //タブのインデックス番号と同じコンテンツにshowクラスをつけて表示する
+//     $('.tab-content').eq(index).addClass('show');
+//     $('.tab-content').hide().eq(index).fadeIn();
+//   });
+// });
 
 
 // フワッとアニメーション
