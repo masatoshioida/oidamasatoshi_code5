@@ -113,7 +113,7 @@ body{
   background-color: plum;
 }
 .third-contents{
-  background-color: seashell;
+  // background-color: seashell;
 }
 .footer{
   background-color: whitesmoke;
@@ -540,7 +540,7 @@ body{
         width: 900px;
         margin: 0 auto;
         height: 100%;
-        background-color: lightgreen;
+        // background-color: lightgreen;
         & h2 {
           font-size: 2rem;
           text-align: center;
@@ -549,7 +549,7 @@ body{
         }
         .first-block{
           height: 280px;
-          // margin-bottom: 4.6875rem;
+          margin-bottom: 4.6875rem;
           .fb-item{
             align-items: center;
             height: 4rem;
@@ -589,14 +589,57 @@ body{
 
 
         .second-block{
-          height: 300px;
-          background-color: lightgrey;
+          // height: 434px;
+          // background-color: darkgoldenrod;
           margin-bottom: 5.64rem;
+          & h2{
+            padding-top: 0;
+          }
+          .faq-list{
+            .faq-list-q{
+              height: 4rem;
+              border-top: 1px solid #1B224C;
+              cursor: pointer;
+              display: flex;
+              align-items: center;
+              // justify-content: center;
+            }
+            .faq-list-a{
+              height: 4rem;
+              background-color: #F8F8F8;
+              display: none;
+              display: flex;
+              align-items: center;
+              // justify-content: center;
+              padding-left: 1.6rem;
+              margin-bottom: .8rem;
+            }
+            & .faq-list-q:nth-child(9){
+              height: 1px;
+            }
+          }
+
         }// second-blockのとじタグ
+
+
+
+
+
+
+
         .third-block{
           display: flex;
           background-color: lightgrey;
           height: 500px;
+          .blog{
+            width: 430px;
+            margin-right: 67px;
+            font-size: 2rem;
+          }
+          .info{
+            width: 430px;
+            font-size: 2rem;
+          }
         }// third-blockのとじタグ
 
       }// third-containerのとじタグ

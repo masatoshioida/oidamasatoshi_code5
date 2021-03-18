@@ -21,12 +21,12 @@
 
 
 // アコーディオンメニュー
-// $(function () {
-//   $(".faq_list_detail_a:not(:first-of-type)").css("display", "none");
-//     $('.faq_list_detail_q').on('click', function () {
-//     $(this).next().slideToggle();
-//   });
-// });
+$(function () {
+  $(".faq-list-a:not(:first-of-type)").css("display", "none");
+    $('.faq-list-q').on('click', function () {
+    $(this).next().slideToggle();
+  });
+});
 
 
 
@@ -136,11 +136,11 @@ $(function(){
 });
 
 
-  const config = {
-    minDate: "today",
-    mode: "multiple"
-  }
-  flatpickr('.flatpickr', config);
+  // const config = {
+  //   minDate: "today",
+  //   mode: "multiple"
+  // }
+  // flatpickr('.flatpickr', config);
 
 
 
