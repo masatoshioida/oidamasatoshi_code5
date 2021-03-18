@@ -571,11 +571,28 @@ body{
               background: #F8F8F8 0% 0% no-repeat padding-box;
               height: 100%;
               & h4{
+                display: inline-block;
                 padding-top: 1rem;
                 padding-left: 1.5rem;
                 width: 214px;
-                border-right: 1px solid #C3C3C3;
+                // border-right: 1px solid #C3C3C3;
                 font-size: 1.125rem;
+                position: relative;
+              }
+              h4:before {
+                content: '';
+                position: absolute;
+                left: 93%;
+                bottom: 30px;/*線の上下位置*/
+                display: inline-block;
+                width: 29px;/*線の長さ*/
+                height: 1px;/*線の太さ*/
+                // -webkit-transform: translateY(-50%);
+                -webkit-transform: rotate(90deg);
+                // transform: translateY(-50%);/*位置調整*/
+                transform: rotate(90deg);/*位置調整*/
+                background-color:#C3C3C3;/*線の色*/
+                border-radius: 1px;/*線の丸み*/
               }
               & p{
                 padding-top: 1rem;
@@ -740,24 +757,40 @@ body{
     }// upper-upperのとじタグ
 
     .upper-bottom{
-      display: flex;
       margin: 0 auto;
       background-color: #F8F8F8;
       height: 80px;
-      align-items: center;
+      // text-align: center;
       // display: inline-block;
       // justify-content: center;
+      .upper-bottom-wrap{
+        // align-items: center;
+        margin: 0 auto;
+        width: 776px;
+        display: flex;
+        height: 100%;
+        position: relative;
+
         & p:nth-child(1){
-          display: inline;
+          // display: inline;
+          font-weight: bold;
           // margin: 0 auto;
-          margin-left: 19.61%;
-          text-align: right;
+          // margin-left: 19.61%;
+          // text-align: right;
           vertical-align: baseline;
+          // position: absolute;
         }
         & h2{
+          // display: inline;
           // position: absolute;
           font-size: 2.25rem;
-        margin: 0 1.25rem;
+          margin: 0 1.25rem;
+          padding-top: .8rem;
+        }
+        & p{
+          padding-top: 2.2rem;
+          // position: absolute;
+        }
       }
     }// upper-bottomのとじタグ
 
@@ -768,15 +801,21 @@ body{
     height: 265px;
     max-width: 1280px;
     margin: 0 auto;
-    .bottom-upper{
-      height: 229px;
+    .bottom-upper-wrapper{
       background-color: #1B224C;
+    }
+    .bottom-upper{
+      width: 900px;
+      margin: 0 auto;
+      height: 229px;
       display: flex;
+      justify-content: space-between;
       color: #FFFFFF;
       .footer-menu{
-        width: 46.33%;
+        // width: 71.17%;
         a:first-of-type{
-          padding-left: 30%;
+          // padding-left: 30%;
+          padding-left: 0;
           border: none;
         }
         a {
@@ -787,13 +826,13 @@ body{
           padding-right: 1.25rem;
           border-left:1px solid #FFFFFF ;
           text-align: right;
-          }
         }
+      }
       .footer-logo{
-        width: 53.67%;
+        // width: 28.83%;
         .logo{
           margin-top: 2.1875rem;
-          margin-left: 19rem;
+          // margin-left: 19rem;
           display: inline-block;
           width: 197px;
           height: 58px;
@@ -803,13 +842,14 @@ body{
             width: 159px;
             height: 31px;
             margin-top: .8rem;
-            margin-left: 1.2rem;
+            margin-left: 1rem;
           }
         }
         .contacts{
           margin-top: 1.6875rem;
+          text-align: right;
           .call{
-            margin-left: 24.2rem;
+            // margin-left: 24.2rem;
             color: #FFFFFF;
             font-weight: bold;
             position: relative;
@@ -826,7 +866,7 @@ body{
             display: inline-block;
           }
           p {
-            margin-left: 25.3rem;
+            // margin-left: 25.3rem;
             margin-top: .8125rem;
             font-size: 12px;
           }
