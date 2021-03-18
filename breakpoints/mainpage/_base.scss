@@ -549,9 +549,45 @@ body{
         }
         .first-block{
           height: 280px;
-          background-color: lightgrey;
-          padding-bottom: 4.6875rem;
+          // margin-bottom: 4.6875rem;
+          .fb-item{
+            align-items: center;
+            height: 4rem;
+            // width: 100%;
+            margin-bottom: .5rem;
+            display: flex;
+            .number{
+              height: 100%;
+              width: 4rem;
+              background: #F5A623 0% 0% no-repeat padding-box;
+              color: #FFFFFF;
+              padding-top: 1.35rem;
+              padding-left: 1.35rem;
+            }
+            .fb-info{
+              width: 52.25rem;
+              display: flex;
+              line-height: 2rem;
+              background: #F8F8F8 0% 0% no-repeat padding-box;
+              height: 100%;
+              & h4{
+                padding-top: 1rem;
+                padding-left: 1.5rem;
+                width: 214px;
+                border-right: 1px solid #C3C3C3;
+                font-size: 1.125rem;
+              }
+              & p{
+                padding-top: 1rem;
+                padding-left: 3.3125rem;
+              }
+            }
+          }
+
         }// first-blockのとじタグ
+
+
+
         .second-block{
           height: 300px;
           background-color: lightgrey;
@@ -610,16 +646,19 @@ body{
       margin: 0 auto;
       background-color: #F8F8F8;
       height: 80px;
+      align-items: center;
+      // display: inline-block;
       // justify-content: center;
-      & p:nth-child(1){
-        display: inline;
-        // margin: 0 auto;
-        // margin-left: 19.61%;
-        text-align: right;
-      }
-      & h2{
-        // position: absolute;
-        font-size: 2.25rem;
+        & p:nth-child(1){
+          display: inline;
+          // margin: 0 auto;
+          margin-left: 19.61%;
+          text-align: right;
+          vertical-align: baseline;
+        }
+        & h2{
+          // position: absolute;
+          font-size: 2.25rem;
         margin: 0 1.25rem;
       }
     }// upper-bottomのとじタグ
@@ -638,6 +677,10 @@ body{
       color: #FFFFFF;
       .footer-menu{
         width: 46.33%;
+        a:first-of-type{
+          padding-left: 30%;
+          border: none;
+        }
         a {
           display: inline-block;
           margin-top: 3.0625rem;
@@ -646,16 +689,13 @@ body{
           padding-right: 1.25rem;
           border-left:1px solid #FFFFFF ;
           text-align: right;
-            & a:first-of-type{
-              padding-left: 5rem;
-            }
           }
         }
       .footer-logo{
         width: 53.67%;
         .logo{
           margin-top: 2.1875rem;
-          margin-left: 20rem;
+          margin-left: 19rem;
           display: inline-block;
           width: 197px;
           height: 58px;
@@ -671,7 +711,7 @@ body{
         .contacts{
           margin-top: 1.6875rem;
           .call{
-            margin-left: 25.2rem;
+            margin-left: 24.2rem;
             color: #FFFFFF;
             font-weight: bold;
             position: relative;
@@ -688,7 +728,7 @@ body{
             display: inline-block;
           }
           p {
-            margin-left: 26.3rem;
+            margin-left: 25.3rem;
             margin-top: .8125rem;
             font-size: 12px;
           }
