@@ -270,9 +270,9 @@ a, a:visited, a:hover, a:active {
 }
 
 .main-view .bottom-view h2 {
-  font-size: 2rem;
-  padding-top: 3.8rem;
-  margin-bottom: 4rem;
+  font-size: 2.25rem;
+  padding-top: 3.6rem;
+  margin-bottom: 3.7rem;
 }
 
 .main-view .bottom-view .bottom-view-container {
@@ -282,14 +282,15 @@ a, a:visited, a:hover, a:active {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin-bottom: 4.1rem;
+  margin-bottom: 4.4em;
 }
 
 .main-view .bottom-view .bottom-view-container p {
-  line-height: 2rem;
+  font-size: 1.125rem;
+  font-weight: bold;
+  line-height: 2.5rem;
   margin-left: 1.7rem;
   margin-right: 1.7rem;
-  letter-spacing: .05rem;
 }
 
 .main-view .bottom-view .bv-list {
@@ -315,13 +316,13 @@ a, a:visited, a:hover, a:active {
 .main-view .bottom-view .bv-list .bv-wrap h2 {
   padding-top: 0;
   margin-bottom: 0;
-  font-size: 2rem;
+  font-size: 2.25rem;
   line-height: 3rem;
   margin-top: 1rem;
 }
 
 .main-view .bottom-view .bv-list .bv-wrap h2 span {
-  font-size: 2rem;
+  font-size: 2.25rem;
   position: relative;
   font-weight: bold;
 }
@@ -360,7 +361,7 @@ a, a:visited, a:hover, a:active {
 }
 
 .main-contents .main-container .first-contents .first-container h2 {
-  font-size: 2rem;
+  font-size: 2.25rem;
   padding-top: 3.6875rem;
   text-align: center;
   padding-bottom: 3.6875rem;
@@ -389,13 +390,18 @@ a, a:visited, a:hover, a:active {
   background: #F5A623 0% 0% no-repeat padding-box;
   margin-bottom: 2rem;
   color: #ffffff;
-  padding-top: .4rem;
+  padding-top: .2rem;
   padding-left: 1.6rem;
 }
 
 .main-contents .main-container .first-contents .first-container .first-content .first-content-wrapper .fl-content h3, .main-contents .main-container .first-contents .first-container .first-content .first-content-wrapper .tl-content h3, .main-contents .main-container .first-contents .first-container .first-content .first-content-wrapper .sr-content h3, .main-contents .main-container .first-contents .first-container .first-content .second-content-wrapper .fl-content h3, .main-contents .main-container .first-contents .first-container .first-content .second-content-wrapper .tl-content h3, .main-contents .main-container .first-contents .first-container .first-content .second-content-wrapper .sr-content h3, .main-contents .main-container .first-contents .first-container .first-content .third-content-wrapper .fl-content h3, .main-contents .main-container .first-contents .first-container .first-content .third-content-wrapper .tl-content h3, .main-contents .main-container .first-contents .first-container .first-content .third-content-wrapper .sr-content h3, .main-contents .main-container .first-contents .first-container .second-content .first-content-wrapper .fl-content h3, .main-contents .main-container .first-contents .first-container .second-content .first-content-wrapper .tl-content h3, .main-contents .main-container .first-contents .first-container .second-content .first-content-wrapper .sr-content h3, .main-contents .main-container .first-contents .first-container .second-content .second-content-wrapper .fl-content h3, .main-contents .main-container .first-contents .first-container .second-content .second-content-wrapper .tl-content h3, .main-contents .main-container .first-contents .first-container .second-content .second-content-wrapper .sr-content h3, .main-contents .main-container .first-contents .first-container .second-content .third-content-wrapper .fl-content h3, .main-contents .main-container .first-contents .first-container .second-content .third-content-wrapper .tl-content h3, .main-contents .main-container .first-contents .first-container .second-content .third-content-wrapper .sr-content h3, .main-contents .main-container .first-contents .first-container .third-content .first-content-wrapper .fl-content h3, .main-contents .main-container .first-contents .first-container .third-content .first-content-wrapper .tl-content h3, .main-contents .main-container .first-contents .first-container .third-content .first-content-wrapper .sr-content h3, .main-contents .main-container .first-contents .first-container .third-content .second-content-wrapper .fl-content h3, .main-contents .main-container .first-contents .first-container .third-content .second-content-wrapper .tl-content h3, .main-contents .main-container .first-contents .first-container .third-content .second-content-wrapper .sr-content h3, .main-contents .main-container .first-contents .first-container .third-content .third-content-wrapper .fl-content h3, .main-contents .main-container .first-contents .first-container .third-content .third-content-wrapper .tl-content h3, .main-contents .main-container .first-contents .first-container .third-content .third-content-wrapper .sr-content h3 {
-  font-size: 2rem;
-  margin-bottom: 1.8rem;
+  font-size: 1.625rem;
+  margin-bottom: 1.5rem;
+  line-height: 2.7rem;
+}
+
+.main-contents .main-container .first-contents .first-container .first-content .first-content-wrapper .fl-content p, .main-contents .main-container .first-contents .first-container .first-content .first-content-wrapper .tl-content p, .main-contents .main-container .first-contents .first-container .first-content .first-content-wrapper .sr-content p, .main-contents .main-container .first-contents .first-container .first-content .second-content-wrapper .fl-content p, .main-contents .main-container .first-contents .first-container .first-content .second-content-wrapper .tl-content p, .main-contents .main-container .first-contents .first-container .first-content .second-content-wrapper .sr-content p, .main-contents .main-container .first-contents .first-container .first-content .third-content-wrapper .fl-content p, .main-contents .main-container .first-contents .first-container .first-content .third-content-wrapper .tl-content p, .main-contents .main-container .first-contents .first-container .first-content .third-content-wrapper .sr-content p, .main-contents .main-container .first-contents .first-container .second-content .first-content-wrapper .fl-content p, .main-contents .main-container .first-contents .first-container .second-content .first-content-wrapper .tl-content p, .main-contents .main-container .first-contents .first-container .second-content .first-content-wrapper .sr-content p, .main-contents .main-container .first-contents .first-container .second-content .second-content-wrapper .fl-content p, .main-contents .main-container .first-contents .first-container .second-content .second-content-wrapper .tl-content p, .main-contents .main-container .first-contents .first-container .second-content .second-content-wrapper .sr-content p, .main-contents .main-container .first-contents .first-container .second-content .third-content-wrapper .fl-content p, .main-contents .main-container .first-contents .first-container .second-content .third-content-wrapper .tl-content p, .main-contents .main-container .first-contents .first-container .second-content .third-content-wrapper .sr-content p, .main-contents .main-container .first-contents .first-container .third-content .first-content-wrapper .fl-content p, .main-contents .main-container .first-contents .first-container .third-content .first-content-wrapper .tl-content p, .main-contents .main-container .first-contents .first-container .third-content .first-content-wrapper .sr-content p, .main-contents .main-container .first-contents .first-container .third-content .second-content-wrapper .fl-content p, .main-contents .main-container .first-contents .first-container .third-content .second-content-wrapper .tl-content p, .main-contents .main-container .first-contents .first-container .third-content .second-content-wrapper .sr-content p, .main-contents .main-container .first-contents .first-container .third-content .third-content-wrapper .fl-content p, .main-contents .main-container .first-contents .first-container .third-content .third-content-wrapper .tl-content p, .main-contents .main-container .first-contents .first-container .third-content .third-content-wrapper .sr-content p {
+  line-height: 1.5rem;
 }
 
 .main-contents .main-container .first-contents .first-container .first-content .first-content-wrapper .fr-content, .main-contents .main-container .first-contents .first-container .first-content .first-content-wrapper .tr-content, .main-contents .main-container .first-contents .first-container .first-content .first-content-wrapper .sl-content, .main-contents .main-container .first-contents .first-container .first-content .second-content-wrapper .fr-content, .main-contents .main-container .first-contents .first-container .first-content .second-content-wrapper .tr-content, .main-contents .main-container .first-contents .first-container .first-content .second-content-wrapper .sl-content, .main-contents .main-container .first-contents .first-container .first-content .third-content-wrapper .fr-content, .main-contents .main-container .first-contents .first-container .first-content .third-content-wrapper .tr-content, .main-contents .main-container .first-contents .first-container .first-content .third-content-wrapper .sl-content, .main-contents .main-container .first-contents .first-container .second-content .first-content-wrapper .fr-content, .main-contents .main-container .first-contents .first-container .second-content .first-content-wrapper .tr-content, .main-contents .main-container .first-contents .first-container .second-content .first-content-wrapper .sl-content, .main-contents .main-container .first-contents .first-container .second-content .second-content-wrapper .fr-content, .main-contents .main-container .first-contents .first-container .second-content .second-content-wrapper .tr-content, .main-contents .main-container .first-contents .first-container .second-content .second-content-wrapper .sl-content, .main-contents .main-container .first-contents .first-container .second-content .third-content-wrapper .fr-content, .main-contents .main-container .first-contents .first-container .second-content .third-content-wrapper .tr-content, .main-contents .main-container .first-contents .first-container .second-content .third-content-wrapper .sl-content, .main-contents .main-container .first-contents .first-container .third-content .first-content-wrapper .fr-content, .main-contents .main-container .first-contents .first-container .third-content .first-content-wrapper .tr-content, .main-contents .main-container .first-contents .first-container .third-content .first-content-wrapper .sl-content, .main-contents .main-container .first-contents .first-container .third-content .second-content-wrapper .fr-content, .main-contents .main-container .first-contents .first-container .third-content .second-content-wrapper .tr-content, .main-contents .main-container .first-contents .first-container .third-content .second-content-wrapper .sl-content, .main-contents .main-container .first-contents .first-container .third-content .third-content-wrapper .fr-content, .main-contents .main-container .first-contents .first-container .third-content .third-content-wrapper .tr-content, .main-contents .main-container .first-contents .first-container .third-content .third-content-wrapper .sl-content {
@@ -421,7 +427,7 @@ a, a:visited, a:hover, a:active {
 
 .main-contents .main-container .first-contents .first-container .third-content {
   height: 15rem;
-  margin-bottom: 5.8125rem;
+  margin-bottom: 5rem;
 }
 
 .main-contents .main-container .first-contents .price {
@@ -458,9 +464,9 @@ a, a:visited, a:hover, a:active {
 }
 
 .main-contents .main-container .second-contents h2 {
-  font-size: 2rem;
-  padding-top: 3.625rem;
-  margin-bottom: 8.5625rem;
+  font-size: 2.25rem;
+  padding-top: 3.5rem;
+  margin-bottom: 8.5rem;
 }
 
 .main-contents .main-container .second-contents .wp {
@@ -544,15 +550,15 @@ a, a:visited, a:hover, a:active {
 }
 
 .main-contents .main-container .third-contents .third-container h2 {
-  font-size: 2rem;
+  font-size: 2.25rem;
   text-align: center;
-  padding-top: 3.625rem;
-  padding-bottom: 3.3125rem;
+  padding-top: 3.5rem;
+  padding-bottom: 3.2rem;
 }
 
 .main-contents .main-container .third-contents .third-container .first-block {
   height: 280px;
-  margin-bottom: 4.6875rem;
+  margin-bottom: 4.6rem;
 }
 
 .main-contents .main-container .third-contents .third-container .first-block .fb-item {
@@ -571,6 +577,7 @@ a, a:visited, a:hover, a:active {
   width: 4rem;
   background: #F5A623 0% 0% no-repeat padding-box;
   color: #FFFFFF;
+  font-weight: bold;
   padding-top: 1.35rem;
   padding-left: 1.35rem;
 }
@@ -588,7 +595,7 @@ a, a:visited, a:hover, a:active {
 .main-contents .main-container .third-contents .third-container .first-block .fb-item .fb-info h4 {
   display: inline-block;
   padding-top: 1rem;
-  padding-left: 1.5rem;
+  padding-left: 1.3125rem;
   width: 214px;
   font-size: 1.125rem;
   position: relative;
@@ -625,6 +632,7 @@ a, a:visited, a:hover, a:active {
 
 .main-contents .main-container .third-contents .third-container .second-block h2 {
   padding-top: 0;
+  padding-bottom: 1.8rem;
 }
 
 .main-contents .main-container .third-contents .third-container .second-block .faq-list {
@@ -633,7 +641,7 @@ a, a:visited, a:hover, a:active {
 }
 
 .main-contents .main-container .third-contents .third-container .second-block .faq-list .faq-list-q {
-  height: 4rem;
+  height: 4.5rem;
   border-top: 1px solid #1B224C;
   cursor: pointer;
   display: -webkit-box;
@@ -695,7 +703,7 @@ a, a:visited, a:hover, a:active {
 }
 
 .main-contents .main-container .third-contents .third-container .second-block .faq-list .faq-list-a {
-  height: 4rem;
+  height: 4.1rem;
   background-color: #F8F8F8;
   display: none;
   display: -webkit-box;
@@ -704,8 +712,8 @@ a, a:visited, a:hover, a:active {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding-left: 1.6rem;
-  margin-bottom: .8rem;
+  padding-left: 1.625rem;
+  margin-bottom: 1rem;
 }
 
 .main-contents .main-container .third-contents .third-container .second-block .faq-list .faq-list-q:nth-child(9) {
@@ -718,7 +726,7 @@ a, a:visited, a:hover, a:active {
   display: -ms-flexbox;
   display: flex;
   height: auto;
-  padding-bottom: 6.5rem;
+  padding-bottom: 5rem;
 }
 
 .main-contents .main-container .third-contents .third-container .third-block .blog {
@@ -740,6 +748,8 @@ a, a:visited, a:hover, a:active {
 
 .main-contents .main-container .third-contents .third-container .third-block .blog .blog-item img {
   width: 150px;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .main-contents .main-container .third-contents .third-container .third-block .blog .blog-item .category {
@@ -761,13 +771,14 @@ a, a:visited, a:hover, a:active {
 
 .main-contents .main-container .third-contents .third-container .third-block .blog .blog-item .blog-info h4 {
   font-size: 1rem;
+  line-height: 1.7rem;
   text-decoration: underline;
 }
 
 .main-contents .main-container .third-contents .third-container .third-block .blog .blog-item .blog-info time {
   font-size: .75rem;
   display: inline-block;
-  margin-top: 3.3rem;
+  margin-top: 2.7rem;
 }
 
 .main-contents .main-container .third-contents .third-container .third-block .info {
@@ -816,8 +827,9 @@ a, a:visited, a:hover, a:active {
 }
 
 .footer .upper-footer .upper-upper h3 {
-  padding-top: 4.375rem;
+  padding-top: 4.2rem;
   font-size: 2rem;
+  padding-bottom: .4rem;
 }
 
 .footer .upper-footer .upper-upper a.rq {
@@ -835,7 +847,7 @@ a, a:visited, a:hover, a:active {
 .footer .upper-footer .upper-upper a.ct {
   color: #FFFFFF;
   display: block;
-  margin-top: 1.375rem;
+  margin-top: 1.3rem;
   text-decoration: underline;
 }
 
@@ -963,5 +975,11 @@ a, a:visited, a:hover, a:active {
   font-size: .75rem;
   font-weight: bold;
   padding-top: .7rem;
+}
+
+@media (max-width: 1024px) {
+  h1 {
+    font-size: 2.5rem !important;
+  }
 }
 /*# sourceMappingURL=style.css.map */

@@ -292,19 +292,20 @@ a, a:visited, a:hover, a:active {
   text-align: center;
   z-index: -10;
   & h2{
-    font-size: 2rem;
-    padding-top: 3.8rem;
-    margin-bottom: 4rem;
+    font-size: 2.25rem;
+    padding-top: 3.6rem;
+    margin-bottom: 3.7rem;
   }
   .bottom-view-container{
     display: flex;
     justify-content: center;
-    margin-bottom: 4.1rem;
+    margin-bottom: 4.4em;
     & p{
-      line-height: 2rem;
+      font-size: 1.125rem;
+      font-weight: bold;
+      line-height: 2.5rem;
       margin-left: 1.7rem;
       margin-right: 1.7rem;
-      letter-spacing: .05rem;
     }
   }
   .bv-list{
@@ -326,12 +327,12 @@ a, a:visited, a:hover, a:active {
     & h2{
       padding-top: 0;
       margin-bottom: 0;
-      font-size: 2rem;
+      font-size: 2.25rem;
       line-height: 3rem;
       margin-top: 1rem;
     }
     & h2 span{
-      font-size: 2rem;
+      font-size: 2.25rem;
       position: relative;
       font-weight: bold;
     }
@@ -376,7 +377,7 @@ a, a:visited, a:hover, a:active {
       margin: 0 auto;
       .first-container{
         & h2{
-          font-size: 2rem;
+          font-size: 2.25rem;
           padding-top: 3.6875rem;
           text-align: center;
           padding-bottom: 3.6875rem;
@@ -401,16 +402,16 @@ a, a:visited, a:hover, a:active {
                 background: #F5A623 0% 0% no-repeat padding-box;
                 margin-bottom: 2rem;
                 color: #ffffff;
-                padding-top: .4rem;
+                padding-top: .2rem;
                 padding-left: 1.6rem;
               }
               & h3 {
-                font-size: 2rem;
-                margin-bottom: 1.8rem;
+                font-size: 1.625rem;
+                margin-bottom: 1.5rem;
+                line-height: 2.7rem;
               }
               & p {
-                // width: 500px;
-                // width: 55.55555%;
+                line-height: 1.5rem;
               }
             }
             .fr-content, .tr-content, .sl-content {
@@ -437,7 +438,7 @@ a, a:visited, a:hover, a:active {
         .third-content{
           height: 15rem;
           // background-color: lightblue;
-          margin-bottom: 5.8125rem;
+          margin-bottom: 5rem;
         }
       } // first-containerのとじタグ
       .price{
@@ -476,9 +477,9 @@ a, a:visited, a:hover, a:active {
       text-align: center;
       padding-bottom: 3.75rem;
       & h2{
-        font-size: 2rem;
-        padding-top: 3.625rem;
-        margin-bottom: 8.5625rem;
+        font-size: 2.25rem;
+        padding-top: 3.5rem;
+        margin-bottom: 8.5rem;
       }
       .wp{
         display: flex;
@@ -549,14 +550,14 @@ a, a:visited, a:hover, a:active {
         height: 100%;
         // background-color: lightgreen;
         & h2 {
-          font-size: 2rem;
+          font-size: 2.25rem;
           text-align: center;
-          padding-top: 3.625rem;
-          padding-bottom: 3.3125rem;
+          padding-top: 3.5rem;
+          padding-bottom: 3.2rem;
         }
         .first-block{
           height: 280px;
-          margin-bottom: 4.6875rem;
+          margin-bottom: 4.6rem;
           .fb-item{
             align-items: center;
             height: 4rem;
@@ -568,6 +569,7 @@ a, a:visited, a:hover, a:active {
               width: 4rem;
               background: #F5A623 0% 0% no-repeat padding-box;
               color: #FFFFFF;
+              font-weight: bold;
               padding-top: 1.35rem;
               padding-left: 1.35rem;
             }
@@ -580,7 +582,7 @@ a, a:visited, a:hover, a:active {
               & h4{
                 display: inline-block;
                 padding-top: 1rem;
-                padding-left: 1.5rem;
+                padding-left: 1.3125rem;
                 width: 214px;
                 // border-right: 1px solid #C3C3C3;
                 font-size: 1.125rem;
@@ -618,10 +620,11 @@ a, a:visited, a:hover, a:active {
           margin-bottom: 5.64rem;
           & h2{
             padding-top: 0;
+            padding-bottom: 1.8rem;
           }
           .faq-list{
             .faq-list-q{
-              height: 4rem;
+              height: 4.5rem;
               border-top: 1px solid #1B224C;
               cursor: pointer;
               display: flex;
@@ -702,14 +705,14 @@ a, a:visited, a:hover, a:active {
 
 
                 .faq-list-a{
-                  height: 4rem;
+                  height: 4.1rem;
                   background-color: #F8F8F8;
                   display: none;
                   display: flex;
                   align-items: center;
                   // justify-content: center;
-                  padding-left: 1.6rem;
-                  margin-bottom: .8rem;
+                  padding-left: 1.625rem;
+                  margin-bottom: 1rem;
                 }
                 & .faq-list-q:nth-child(9){
                   height: 1px;
@@ -731,7 +734,7 @@ a, a:visited, a:hover, a:active {
           display: flex;
           // background-color: lightgrey;
           height: auto;
-          padding-bottom: 6.5rem;
+          padding-bottom: 5rem;
           .blog{
             width: 430px;
             // margin-right: 67px;
@@ -746,6 +749,7 @@ a, a:visited, a:hover, a:active {
               margin-bottom: 1.9375rem;
               & img{
                 width: 150px;
+                object-fit: cover;
               }
               .category{
                 width: 78px;
@@ -763,12 +767,13 @@ a, a:visited, a:hover, a:active {
                 width: 260px;
                 & h4{
                   font-size: 1rem;
+                  line-height: 1.7rem;
                   text-decoration: underline;
                 }
                 & time{
                   font-size: .75rem;
                   display: inline-block;
-                  margin-top: 3.3rem;
+                  margin-top: 2.7rem;
                 }
               }
             }
@@ -817,8 +822,9 @@ a, a:visited, a:hover, a:active {
       background-size: cover;
       color: #FFFFFF;
       & h3{
-        padding-top: 4.375rem;
+        padding-top: 4.2rem;
         font-size: 2rem;
+        padding-bottom: .4rem;
       }
       & a.rq {
       margin: 0 auto;
@@ -834,7 +840,7 @@ a, a:visited, a:hover, a:active {
       & a.ct{
       color: #FFFFFF;
       display: block;
-      margin-top: 1.375rem;
+      margin-top: 1.3rem;
       text-decoration: underline;
       }
     }// upper-upperのとじタグ
