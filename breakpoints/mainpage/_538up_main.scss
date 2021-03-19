@@ -1,0 +1,35 @@
+h1{
+  font-size: 2rem !important;
+}
+h2, h2 span{
+  font-size: 1.5rem !important;
+}
+h3{
+  font-size: 1.2rem !important;
+}
+h4{
+  font-size: 1.1rem !important;
+}
+
+html{
+  font-size: 14px;
+}
+
+
+
+
+.header{
+  height: 60px;
+  .header-inner{
+    height: 60px;
+    padding: 0px;
+    position: relative;
+    // .logo{
+      .contact-time{
+        margin: 0 0 0 auto;
+      }
+      a.button1, a.button2{
+        display: none;
+      }
+  }
+}

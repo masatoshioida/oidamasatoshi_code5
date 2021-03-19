@@ -61,7 +61,7 @@ html {
 
 body {
   width: 100%;
-  height: 5315px;
+  height: 100%;
   margin: 0;
   padding: 0;
   line-height: 1.4;
@@ -193,7 +193,7 @@ a, a:visited, a:hover, a:active {
   display: flex;
   text-align: right;
   height: 3.13rem;
-  font-size: 14px;
+  font-size: .875rem;
   font-weight: bold;
   color: #ffffff;
   text-align: center;
@@ -203,14 +203,14 @@ a, a:visited, a:hover, a:active {
 
 .header a.button1 {
   background: #F5A623 0% 0% no-repeat padding-box;
-  width: 150px;
+  width: 9.375rem;
   padding-top: 1rem;
   padding-left: 2.9rem;
 }
 
 .header a.button2 {
   background: #1B224C 0% 0% no-repeat padding-box;
-  width: 137px;
+  width: 8.5625rem;
   padding-top: 1rem;
   padding-left: 1.6rem;
 }
@@ -248,8 +248,8 @@ a, a:visited, a:hover, a:active {
   margin-top: 2.4rem;
   background: #F5A623 0% 0% no-repeat padding-box;
   border-radius: 31px;
-  width: 260px;
-  height: 60px;
+  width: 16.25rem;
+  height: 3.75rem;
   padding-top: 1.2rem;
 }
 
@@ -305,10 +305,10 @@ a, a:visited, a:hover, a:active {
 
 .main-view .bottom-view .bv-list .bv-wrap {
   display: inline-block;
-  margin-top: .625rem;
+  margin-top: 10px;
   width: 96.44%;
   max-width: 868px;
-  height: 14.0625rem;
+  height: 225px;
   border: 5px solid #1B224C;
   z-index: 10;
 }
@@ -355,9 +355,10 @@ a, a:visited, a:hover, a:active {
 }
 
 .main-contents .main-container .first-contents {
-  height: 1341px;
+  height: auto;
   max-width: 900px;
   margin: 0 auto;
+  padding-bottom: 2.4375rem;
 }
 
 .main-contents .main-container .first-contents .first-container h2 {
@@ -730,7 +731,7 @@ a, a:visited, a:hover, a:active {
 }
 
 .main-contents .main-container .third-contents .third-container .third-block .blog {
-  width: 430px;
+  max-width: 430px;
 }
 
 .main-contents .main-container .third-contents .third-container .third-block .blog h3 {
@@ -782,7 +783,8 @@ a, a:visited, a:hover, a:active {
 }
 
 .main-contents .main-container .third-contents .third-container .third-block .info {
-  width: 430px;
+  max-width: 430px;
+  width: 100%;
   margin: 0 0 0 auto;
 }
 
@@ -792,7 +794,7 @@ a, a:visited, a:hover, a:active {
 }
 
 .main-contents .main-container .third-contents .third-container .third-block .info .info-item {
-  width: 402px;
+  max-width: 402px;
   height: 87px;
   margin-bottom: 1rem;
 }
@@ -859,7 +861,7 @@ a, a:visited, a:hover, a:active {
 
 .footer .upper-footer .upper-bottom .upper-bottom-wrap {
   margin: 0 auto;
-  width: 776px;
+  max-width: 776px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -977,9 +979,366 @@ a, a:visited, a:hover, a:active {
   padding-top: .7rem;
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 538px) {
   h1 {
-    font-size: 2.5rem !important;
+    font-size: 2rem !important;
+  }
+  h2, h2 span {
+    font-size: 1.5rem !important;
+  }
+  h3 {
+    font-size: 1.2rem !important;
+  }
+  h4 {
+    font-size: 1.1rem !important;
+  }
+  html {
+    font-size: 14px;
+  }
+  .header {
+    height: 60px;
+  }
+  .header .header-inner {
+    height: 60px;
+    padding: 0px;
+    position: relative;
+  }
+  .header .header-inner .contact-time {
+    margin: 0 0 0 auto;
+  }
+  .header .header-inner a.button1, .header .header-inner a.button2 {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 2rem !important;
+  }
+  h2,
+  h2 span {
+    font-size: 1.5rem !important;
+  }
+  h3 {
+    font-size: 1.2rem !important;
+  }
+  h4 {
+    font-size: 1.1rem !important;
+  }
+  html {
+    font-size: 14px;
+  }
+  .header {
+    height: 60px;
+  }
+  .header .header-inner {
+    height: 60px;
+    padding: 0px;
+    position: relative;
+  }
+  .header .header-inner .globalNav {
+    position: fixed;
+    opacity: 0;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    color: #fff;
+    background: rgba(151, 143, 16, 0.9);
+    text-align: center;
+    opacity: 0;
+    -webkit-transition: 0.6s ease-in-out;
+    transition: 0.6s ease-in-out;
+    visibility: hidden;
+    padding-top: 195px;
+    font-size: 24px;
+    z-index: 3;
+  }
+  .header .header-inner .globalNav .topics {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    font-size: 2.4rem;
+    text-align: center;
+    margin-left: 0px;
+  }
+  .header .header-inner .globalNav .topics a {
+    margin-right: 0;
+  }
+  .header .header-inner .globalNav .topics li:not(:last-child) {
+    margin-right: 0;
+    margin-bottom: 40px;
+  }
+  .header .header-inner .gnav-btn {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+    margin: 0 20px 0 10px;
+    display: inline-block;
+    position: relative;
+    width: 26px;
+    height: 26px;
+    cursor: pointer;
+    -webkit-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
+    z-index: 4;
+  }
+  .header .header-inner .gnav-btn span {
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    display: inline-block;
+    background: #000000;
+    border-radius: 10px;
+    transition: all 0.4s ease-in-out;
+    -webkit-transition: all 0.4s ease-in-out;
+    -moz-transition: 0.3s ease-in-out;
+  }
+  .header .header-inner .gnav-btn span:nth-child(1) {
+    top: 20%;
+  }
+  .header .header-inner .gnav-btn span:nth-child(2) {
+    top: 50%;
+  }
+  .header .header-inner .gnav-btn span:nth-child(3) {
+    top: 80%;
+  }
+  .header .header-inner .gnav-btn.open span:nth-child(1) {
+    -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
+    top: 48%;
+  }
+  .header .header-inner .gnav-btn.open span:nth-child(2) {
+    opacity: 0;
+    -webkit-transition: opacity 0.3s;
+    transition: opacity 0.3s;
+  }
+  .header .header-inner .gnav-btn.open span:nth-child(3) {
+    -webkit-transform: rotate(-45deg);
+            transform: rotate(-45deg);
+    top: 48%;
+  }
+  .header .header-inner .globalNav.slide-in {
+    opacity: 1;
+    visibility: visible;
+  }
+  .header .header-inner .globalNav.slide-in .topics {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: center;
+    font-size: 23px;
+    letter-spacing: 4px;
+  }
+  .header .header-inner .globalNav.slide-in .topics a {
+    margin-right: 0;
+  }
+  .header .header-inner .globalNav.slide-in .topics li:not(:last-child) {
+    margin-right: 0;
+    margin-bottom: 40px;
+  }
+  .header .header-inner .contact-time {
+    margin: 0 0 0 auto;
+  }
+  .header .header-inner a.button1 {
+    width: 6.4rem;
+    height: 2.3rem;
+    font-weight: normal;
+    padding-top: 0.6rem;
+    padding-left: 1.4rem;
+    margin-left: 1rem;
+  }
+  .header .header-inner a.button2 {
+    width: 6.4rem;
+    height: 2.3rem;
+    padding-top: 0.6rem;
+    padding-left: 0.5rem;
+    font-weight: normal;
+  }
+  .main-view {
+    height: auto;
+  }
+  .main-view .upper-view {
+    height: 440px;
+  }
+  .main-view .upper-view h1 {
+    padding-top: 5.5rem;
+  }
+  .main-view .upper-view p {
+    margin-top: 3rem;
+    margin-bottom: 4rem;
+  }
+  .main-view .upper-view a.rq {
+    width: 12rem;
+    border-radius: 12px;
+    font-size: 1.2rem;
+    padding-top: 1rem;
+  }
+  .main-view .upper-view a.ct {
+    margin-top: 3rem;
+    font-size: 1.2rem;
+  }
+  .main-view .bottom-view h2 {
+    margin-bottom: 3rem;
+  }
+  .main-view .bottom-view .bottom-view-container p {
+    font-weight: normal;
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+  .main-view .bottom-view .bv-list {
+    width: 90%;
+  }
+  .main-view .bottom-view .bv-list .bv-wrap {
+    border: 3px solid #1b224c;
+  }
+  .main-contents .main-container .first-contents .first-container {
+    width: 96%;
+    margin: 0 auto;
+  }
+  .main-contents .main-container .first-contents .first-container h2 {
+    padding-top: 3rem;
+  }
+  .main-contents .main-container .first-contents .first-container .first-content,
+  .main-contents .main-container .first-contents .first-container .second-content,
+  .main-contents .main-container .first-contents .first-container .third-content {
+    margin-bottom: 4.5rem;
+  }
+  .main-contents .main-container .first-contents .first-container .first-content .first-content-wrapper,
+  .main-contents .main-container .first-contents .first-container .first-content .second-content-wrapper,
+  .main-contents .main-container .first-contents .first-container .first-content .third-content-wrapper,
+  .main-contents .main-container .first-contents .first-container .second-content .first-content-wrapper,
+  .main-contents .main-container .first-contents .first-container .second-content .second-content-wrapper,
+  .main-contents .main-container .first-contents .first-container .second-content .third-content-wrapper,
+  .main-contents .main-container .first-contents .first-container .third-content .first-content-wrapper,
+  .main-contents .main-container .first-contents .first-container .third-content .second-content-wrapper,
+  .main-contents .main-container .first-contents .first-container .third-content .third-content-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    height: 100%;
+  }
+  .main-contents .main-container .first-contents .first-container .first-content .first-content-wrapper .fl-content,
+  .main-contents .main-container .first-contents .first-container .first-content .first-content-wrapper .tl-content,
+  .main-contents .main-container .first-contents .first-container .first-content .first-content-wrapper .sr-content,
+  .main-contents .main-container .first-contents .first-container .first-content .second-content-wrapper .fl-content,
+  .main-contents .main-container .first-contents .first-container .first-content .second-content-wrapper .tl-content,
+  .main-contents .main-container .first-contents .first-container .first-content .second-content-wrapper .sr-content,
+  .main-contents .main-container .first-contents .first-container .first-content .third-content-wrapper .fl-content,
+  .main-contents .main-container .first-contents .first-container .first-content .third-content-wrapper .tl-content,
+  .main-contents .main-container .first-contents .first-container .first-content .third-content-wrapper .sr-content,
+  .main-contents .main-container .first-contents .first-container .second-content .first-content-wrapper .fl-content,
+  .main-contents .main-container .first-contents .first-container .second-content .first-content-wrapper .tl-content,
+  .main-contents .main-container .first-contents .first-container .second-content .first-content-wrapper .sr-content,
+  .main-contents .main-container .first-contents .first-container .second-content .second-content-wrapper .fl-content,
+  .main-contents .main-container .first-contents .first-container .second-content .second-content-wrapper .tl-content,
+  .main-contents .main-container .first-contents .first-container .second-content .second-content-wrapper .sr-content,
+  .main-contents .main-container .first-contents .first-container .second-content .third-content-wrapper .fl-content,
+  .main-contents .main-container .first-contents .first-container .second-content .third-content-wrapper .tl-content,
+  .main-contents .main-container .first-contents .first-container .second-content .third-content-wrapper .sr-content,
+  .main-contents .main-container .first-contents .first-container .third-content .first-content-wrapper .fl-content,
+  .main-contents .main-container .first-contents .first-container .third-content .first-content-wrapper .tl-content,
+  .main-contents .main-container .first-contents .first-container .third-content .first-content-wrapper .sr-content,
+  .main-contents .main-container .first-contents .first-container .third-content .second-content-wrapper .fl-content,
+  .main-contents .main-container .first-contents .first-container .third-content .second-content-wrapper .tl-content,
+  .main-contents .main-container .first-contents .first-container .third-content .second-content-wrapper .sr-content,
+  .main-contents .main-container .first-contents .first-container .third-content .third-content-wrapper .fl-content,
+  .main-contents .main-container .first-contents .first-container .third-content .third-content-wrapper .tl-content,
+  .main-contents .main-container .first-contents .first-container .third-content .third-content-wrapper .sr-content {
+    width: 55.5555%;
+  }
+  .main-contents .main-container .first-contents .first-container .first-content .first-content-wrapper .fl-content .feature,
+  .main-contents .main-container .first-contents .first-container .first-content .first-content-wrapper .tl-content .feature,
+  .main-contents .main-container .first-contents .first-container .first-content .first-content-wrapper .sr-content .feature,
+  .main-contents .main-container .first-contents .first-container .first-content .second-content-wrapper .fl-content .feature,
+  .main-contents .main-container .first-contents .first-container .first-content .second-content-wrapper .tl-content .feature,
+  .main-contents .main-container .first-contents .first-container .first-content .second-content-wrapper .sr-content .feature,
+  .main-contents .main-container .first-contents .first-container .first-content .third-content-wrapper .fl-content .feature,
+  .main-contents .main-container .first-contents .first-container .first-content .third-content-wrapper .tl-content .feature,
+  .main-contents .main-container .first-contents .first-container .first-content .third-content-wrapper .sr-content .feature,
+  .main-contents .main-container .first-contents .first-container .second-content .first-content-wrapper .fl-content .feature,
+  .main-contents .main-container .first-contents .first-container .second-content .first-content-wrapper .tl-content .feature,
+  .main-contents .main-container .first-contents .first-container .second-content .first-content-wrapper .sr-content .feature,
+  .main-contents .main-container .first-contents .first-container .second-content .second-content-wrapper .fl-content .feature,
+  .main-contents .main-container .first-contents .first-container .second-content .second-content-wrapper .tl-content .feature,
+  .main-contents .main-container .first-contents .first-container .second-content .second-content-wrapper .sr-content .feature,
+  .main-contents .main-container .first-contents .first-container .second-content .third-content-wrapper .fl-content .feature,
+  .main-contents .main-container .first-contents .first-container .second-content .third-content-wrapper .tl-content .feature,
+  .main-contents .main-container .first-contents .first-container .second-content .third-content-wrapper .sr-content .feature,
+  .main-contents .main-container .first-contents .first-container .third-content .first-content-wrapper .fl-content .feature,
+  .main-contents .main-container .first-contents .first-container .third-content .first-content-wrapper .tl-content .feature,
+  .main-contents .main-container .first-contents .first-container .third-content .first-content-wrapper .sr-content .feature,
+  .main-contents .main-container .first-contents .first-container .third-content .second-content-wrapper .fl-content .feature,
+  .main-contents .main-container .first-contents .first-container .third-content .second-content-wrapper .tl-content .feature,
+  .main-contents .main-container .first-contents .first-container .third-content .second-content-wrapper .sr-content .feature,
+  .main-contents .main-container .first-contents .first-container .third-content .third-content-wrapper .fl-content .feature,
+  .main-contents .main-container .first-contents .first-container .third-content .third-content-wrapper .tl-content .feature,
+  .main-contents .main-container .first-contents .first-container .third-content .third-content-wrapper .sr-content .feature {
+    margin-bottom: 1.3rem;
+  }
+  .main-contents .main-container .first-contents .first-container .first-content .first-content-wrapper .fl-content h3,
+  .main-contents .main-container .first-contents .first-container .first-content .first-content-wrapper .tl-content h3,
+  .main-contents .main-container .first-contents .first-container .first-content .first-content-wrapper .sr-content h3,
+  .main-contents .main-container .first-contents .first-container .first-content .second-content-wrapper .fl-content h3,
+  .main-contents .main-container .first-contents .first-container .first-content .second-content-wrapper .tl-content h3,
+  .main-contents .main-container .first-contents .first-container .first-content .second-content-wrapper .sr-content h3,
+  .main-contents .main-container .first-contents .first-container .first-content .third-content-wrapper .fl-content h3,
+  .main-contents .main-container .first-contents .first-container .first-content .third-content-wrapper .tl-content h3,
+  .main-contents .main-container .first-contents .first-container .first-content .third-content-wrapper .sr-content h3,
+  .main-contents .main-container .first-contents .first-container .second-content .first-content-wrapper .fl-content h3,
+  .main-contents .main-container .first-contents .first-container .second-content .first-content-wrapper .tl-content h3,
+  .main-contents .main-container .first-contents .first-container .second-content .first-content-wrapper .sr-content h3,
+  .main-contents .main-container .first-contents .first-container .second-content .second-content-wrapper .fl-content h3,
+  .main-contents .main-container .first-contents .first-container .second-content .second-content-wrapper .tl-content h3,
+  .main-contents .main-container .first-contents .first-container .second-content .second-content-wrapper .sr-content h3,
+  .main-contents .main-container .first-contents .first-container .second-content .third-content-wrapper .fl-content h3,
+  .main-contents .main-container .first-contents .first-container .second-content .third-content-wrapper .tl-content h3,
+  .main-contents .main-container .first-contents .first-container .second-content .third-content-wrapper .sr-content h3,
+  .main-contents .main-container .first-contents .first-container .third-content .first-content-wrapper .fl-content h3,
+  .main-contents .main-container .first-contents .first-container .third-content .first-content-wrapper .tl-content h3,
+  .main-contents .main-container .first-contents .first-container .third-content .first-content-wrapper .sr-content h3,
+  .main-contents .main-container .first-contents .first-container .third-content .second-content-wrapper .fl-content h3,
+  .main-contents .main-container .first-contents .first-container .third-content .second-content-wrapper .tl-content h3,
+  .main-contents .main-container .first-contents .first-container .third-content .second-content-wrapper .sr-content h3,
+  .main-contents .main-container .first-contents .first-container .third-content .third-content-wrapper .fl-content h3,
+  .main-contents .main-container .first-contents .first-container .third-content .third-content-wrapper .tl-content h3,
+  .main-contents .main-container .first-contents .first-container .third-content .third-content-wrapper .sr-content h3 {
+    margin-bottom: 1.3rem;
+    line-height: 2rem;
+  }
+  .footer .upper_footer .footer_menu {
+    padding-top: 50px;
+    padding-bottom: 100px;
+    width: 144px;
+  }
+  .footer .upper_footer .footer_menu a {
+    font-size: 14px;
+  }
+  .footer .upper_footer .footer_image {
+    margin-bottom: 100px;
+  }
+  .footer .upper_footer .footer_image img {
+    width: 120px;
+  }
+  .footer .upper_footer .footer_access p {
+    font-size: 12px;
+  }
+  .footer .upper_footer .footer_access .add_wrap {
+    display: block;
+    text-align: center;
+  }
+  .footer .upper_footer .footer_access .add_wrap p {
+    margin-left: 0px;
+    margin-bottom: 10px;
+  }
+  .footer .upper_footer .footer_access .tel-wrap {
+    display: block;
+  }
+  .footer .upper_footer .footer_access .tel-wrap p {
+    margin-bottom: 10px;
+    font-size: 12px;
   }
 }
 /*# sourceMappingURL=style.css.map */

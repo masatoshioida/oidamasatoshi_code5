@@ -63,7 +63,8 @@ html{
 
 body {
   width: 100%;
-  height: 5315px;
+  // max-width: 2560px;
+  height: 100%;
   margin: 0;
   padding: 0;
   line-height: 1.4;
@@ -210,7 +211,7 @@ a, a:visited, a:hover, a:active {
     display: flex;
     text-align: right;
     height: 3.13rem;
-    font-size: 14px;
+    font-size: .875rem;
     font-weight: bold;
     // display: inline-block;
     color: #ffffff;
@@ -222,13 +223,13 @@ a, a:visited, a:hover, a:active {
   }
   a.button1{
     background: #F5A623 0% 0% no-repeat padding-box;
-    width: 150px;
+    width: 9.375rem;
     padding-top: 1rem;
     padding-left: 2.9rem;
   }
   a.button2{
     background: #1B224C 0% 0% no-repeat padding-box;
-    width: 137px;
+    width: 8.5625rem;
     padding-top: 1rem;
     padding-left: 1.6rem;
   }
@@ -270,8 +271,8 @@ a, a:visited, a:hover, a:active {
     margin-top: 2.4rem;
     background: #F5A623 0% 0% no-repeat padding-box;
     border-radius: 31px;
-    width: 260px;
-    height: 60px;
+    width: 16.25rem;
+    height: 3.75rem;
     padding-top: 1.2rem;
     // padding-left: 2.9rem;
   }
@@ -318,10 +319,10 @@ a, a:visited, a:hover, a:active {
     z-index: 0;
     .bv-wrap{
       display: inline-block;
-      margin-top: .625rem;
+      margin-top: 10px;
       width: 96.44%;
       max-width: 868px;
-      height: 14.0625rem;
+      height: 225px;
       border: 5px solid #1B224C;
       z-index: 10;
     & h2{
@@ -372,9 +373,10 @@ a, a:visited, a:hover, a:active {
     // max-width: 1280px;
 
     .first-contents {
-      height: 1341px;
+      height: auto;
       max-width: 900px;
       margin: 0 auto;
+      padding-bottom: 2.4375rem;
       .first-container{
         & h2{
           font-size: 2.25rem;
@@ -736,7 +738,7 @@ a, a:visited, a:hover, a:active {
           height: auto;
           padding-bottom: 5rem;
           .blog{
-            width: 430px;
+            max-width: 430px;
             // margin-right: 67px;
             & h3{
               font-size: 2rem;
@@ -779,14 +781,15 @@ a, a:visited, a:hover, a:active {
             }
           }
           .info{
-            width: 430px;
+            max-width: 430px;
+            width: 100%;
             margin:0 0 0 auto;
             & h3{
               font-size: 2rem;
               padding-bottom: 1.875rem;
             }
             .info-item{
-              width: 402px;
+              max-width: 402px;
               height: 87px;
               margin-bottom: 1rem;
               & time{
@@ -855,7 +858,7 @@ a, a:visited, a:hover, a:active {
       .upper-bottom-wrap{
         // align-items: center;
         margin: 0 auto;
-        width: 776px;
+        max-width: 776px;
         display: flex;
         height: 100%;
         position: relative;
