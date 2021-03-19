@@ -121,9 +121,9 @@ body{
 .upper-footer{
   background-color: honeydew;
 }
-.bottom-footer{
-  background-color: hotpink;
-}
+// .bottom-footer{
+//   background-color: hotpink;
+// }
 
 
 
@@ -544,7 +544,7 @@ body{
     .third-contents {
       height: auto;
       .third-container{
-        width: 900px;
+        max-width: 900px;
         margin: 0 auto;
         height: 100%;
         // background-color: lightgreen;
@@ -888,7 +888,7 @@ body{
       background-color: #1B224C;
     }
     .bottom-upper{
-      width: 900px;
+      max-width: 900px;
       margin: 0 auto;
       height: 229px;
       display: flex;
@@ -958,12 +958,15 @@ body{
     }// bottom-upperとじタグ
 
     .bottom-bottom{
+      max-width: 900px;
+      margin: 0 auto;
       height: 36px;
       background-color: #F8F8F8;
       & p{
+        text-align: right;
         font-size: .75rem;
         font-weight: bold;
-        margin-left: 78.36%;
+        // margin-left: 78.36%;
         padding-top: .7rem;
       }
     }// bottom-bottomのとじタグ

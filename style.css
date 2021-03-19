@@ -115,10 +115,6 @@ body {
   background-color: honeydew;
 }
 
-.bottom-footer {
-  background-color: hotpink;
-}
-
 .header {
   height: 80px;
   width: 100%;
@@ -577,7 +573,7 @@ body {
 }
 
 .main-contents .main-container .third-contents .third-container {
-  width: 900px;
+  max-width: 900px;
   margin: 0 auto;
   height: 100%;
 }
@@ -921,7 +917,7 @@ body {
 }
 
 .footer .bottom-footer .bottom-upper {
-  width: 900px;
+  max-width: 900px;
   margin: 0 auto;
   height: 229px;
   display: -webkit-box;
@@ -993,14 +989,16 @@ body {
 }
 
 .footer .bottom-footer .bottom-bottom {
+  max-width: 900px;
+  margin: 0 auto;
   height: 36px;
   background-color: #F8F8F8;
 }
 
 .footer .bottom-footer .bottom-bottom p {
+  text-align: right;
   font-size: .75rem;
   font-weight: bold;
-  margin-left: 78.36%;
   padding-top: .7rem;
 }
 /*# sourceMappingURL=style.css.map */
