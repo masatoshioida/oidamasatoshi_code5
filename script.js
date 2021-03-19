@@ -24,10 +24,19 @@
 $(function () {
   $(".faq-list-a:not(:first-of-type)").css("display", "none");
     $('.faq-list-q').on('click', function () {
-    $(this).next().slideToggle();
+      $(this).next().slideToggle();
+      $(this).toggleClass('selected');
+      $('.faq-list-q').not(this).removeClass('selected');
+      $('.faq-list-q').not($(this)).next('.faq-list-a').slideUp();
   });
 });
 
+// $(function(){
+// 	$('.faq-list-q').click(function(){
+// 		$(this).toggleClass('selected');
+// 		$(this).next().slideToggle();
+// 	});
+// });
 
 
 

@@ -100,9 +100,9 @@ body{
 .bottom-view{
   background-color: lavenderblush;
 }
-.main-contents{
-  background-color:#d4ba9f;
-}
+// .main-contents{
+//   background-color:#d4ba9f;
+// }
 .main-container{
   background-color: lightskyblue;
 }
@@ -112,9 +112,9 @@ body{
 .second-contents{
   background-color: plum;
 }
-.third-contents{
-  background-color: seashell;
-}
+// .third-contents{
+//   background-color: seashell;
+// }
 .footer{
   background-color: whitesmoke;
 }
@@ -290,6 +290,7 @@ body{
   background-color: #1B224C;
   color: #ffffff;
   text-align: center;
+  z-index: -10;
   & h2{
     font-size: 2rem;
     padding-top: 3.8rem;
@@ -309,15 +310,14 @@ body{
   .bv-list{
     margin: 0 auto;
     position: relative;
-    width: 900px;
+    max-width: 900px;
     height: 248px;
     background-color: #ffffff;
     color: #1B224C;
-    // z-index: -2;
+    z-index: 0;
     .bv-wrap{
-      position: absolute;
-      top: .68rem;
-      left: 1rem;
+      display: inline-block;
+      margin-top: 10px;
       width: 868px;
       height: 225px;
       border: 5px solid #1B224C;
@@ -619,22 +619,98 @@ body{
               cursor: pointer;
               display: flex;
               align-items: center;
+              position: relative;
               // justify-content: center;
             }
-            .faq-list-a{
-              height: 4rem;
-              background-color: #F8F8F8;
-              display: none;
-              display: flex;
-              align-items: center;
-              // justify-content: center;
-              padding-left: 1.6rem;
-              margin-bottom: .8rem;
+            // 案１
+            .toggle-btn{
+              position: absolute;
+              top:50%;
+              right: 20px;
+              transform: translateY(-50%);
+              // background: #0052a4;
+              display: block;
+              width: 25px;
+              height: 25px;
+              text-indent: 100%;
+              white-space: nowrap;
+              overflow: hidden;
+              border-radius: 50%;
             }
-            & .faq-list-q:nth-child(9){
-              height: 1px;
-            }
-          }
+            // .toggle-btn:before, .toggle-btn:after {
+            //     display: block;
+            //     content: '';
+            //     background-color: #1B224C;
+            //     position: absolute;
+            //     width: 25px;
+            //     height: 3px;
+            //     top: 50%;
+            //     left: 50%;
+            //     transform: translate(-50%, -50%);
+            //   }
+            //   .toggle-btn:before {
+            //     width: 3px;
+            //     height: 25px;
+            //   }
+            //   .faq-list-q.selected.toggle-btn::before {
+            //     transform: translateY(-50%) rotate(90deg);
+            //     // transition: .3s;
+            //     // content: normal;
+            //   }
+              // .faq-list dd {
+              //   display: none;
+              // }
+                // 案２
+                .faq-list-q:before {
+                  content: "";
+                  position: absolute;
+                  top: 50%;
+                  right: 8px;
+                  width: 24px;
+                  height: 2px;
+                  background: #1B224C;
+                  transform: translateY(-50%);
+                }
+
+                /* ②プラスの縦線 */
+                .faq-list-q:after {
+                  content: "";
+                  position: absolute;
+                  top: 50%;
+                  /* 8px+12px-1px(幅2pxの半分) */
+                  right: 19px;
+                  width: 2px;
+                  height: 24px;
+                  background: #1B224C;
+                  transform: translateY(-50%);
+                  transition: .3s;
+                }
+
+                /* ③オープン時にopenクラスを付与（縦線を回転させて非表示に） */
+                .faq-list-q.selected:after {
+                  top: 25%;
+                  opacity: 0;
+                  transform: rotate(90deg);
+                }
+
+
+                .faq-list-a{
+                  height: 4rem;
+                  background-color: #F8F8F8;
+                  display: none;
+                  display: flex;
+                  align-items: center;
+                  // justify-content: center;
+                  padding-left: 1.6rem;
+                  margin-bottom: .8rem;
+                }
+                & .faq-list-q:nth-child(9){
+                  height: 1px;
+                  // .faq-list-q:before{
+                    display: none;
+                  // }
+                }
+              }
 
         }// second-blockのとじタグ
 
