@@ -86,7 +86,9 @@ a, a:visited, a:hover, a:active {
 .header {
   height: 80px;
   width: 100%;
+  position: fixed;
   background: #FFFFFF 0% 0% no-repeat padding-box;
+  z-index: 20;
 }
 
 .header .header-inner {
@@ -135,6 +137,7 @@ a, a:visited, a:hover, a:active {
   margin-right: 1.75rem;
   font-weight: bold;
   display: inline-block;
+  cursor: pointer;
 }
 
 .header .globalNav .topics a, .header .globalNav .topics a:visited, .header .globalNav .topics a:hover, .header .globalNav .topics a:active {
@@ -219,6 +222,7 @@ a, a:visited, a:hover, a:active {
   width: 100%;
   height: 1080px;
   color: #FFFFFF;
+  padding-top: 80px;
 }
 
 .main-view .upper-view {
@@ -1009,6 +1013,179 @@ a, a:visited, a:hover, a:active {
   .header .header-inner a.button1, .header .header-inner a.button2 {
     display: none;
   }
+  .main-view .bottom-view .bottom-view-container {
+    margin-bottom: 6rem;
+  }
+  .main-contents .main-container .first-contents {
+    height: auto;
+  }
+  .main-contents .main-container .first-contents .first-container h2 {
+    letter-spacing: -0.01rem;
+  }
+  .main-contents .main-container .first-contents .first-container .first-content,
+  .main-contents .main-container .first-contents .first-container .second-content,
+  .main-contents .main-container .first-contents .first-container .third-content {
+    height: auto;
+  }
+  .main-contents .main-container .first-contents .first-container .first-content .second-content-wrapper,
+  .main-contents .main-container .first-contents .first-container .second-content .second-content-wrapper,
+  .main-contents .main-container .first-contents .first-container .third-content .second-content-wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: 100%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .main-contents .main-container .first-contents .first-container .first-content .second-content-wrapper .sr-content,
+  .main-contents .main-container .first-contents .first-container .second-content .second-content-wrapper .sr-content,
+  .main-contents .main-container .first-contents .first-container .third-content .second-content-wrapper .sr-content {
+    margin-top: 1rem;
+    width: 100% !important;
+  }
+  .main-contents .main-container .first-contents .first-container .first-content .second-content-wrapper .sr-content h3 br,
+  .main-contents .main-container .first-contents .first-container .second-content .second-content-wrapper .sr-content h3 br,
+  .main-contents .main-container .first-contents .first-container .third-content .second-content-wrapper .sr-content h3 br {
+    display: none;
+  }
+  .main-contents .main-container .first-contents .first-container .first-content .second-content-wrapper .sl-content,
+  .main-contents .main-container .first-contents .first-container .second-content .second-content-wrapper .sl-content,
+  .main-contents .main-container .first-contents .first-container .third-content .second-content-wrapper .sl-content {
+    width: 100%;
+  }
+  .main-contents .main-container .first-contents .first-container .first-content .first-content-wrapper,
+  .main-contents .main-container .first-contents .first-container .first-content .third-content-wrapper,
+  .main-contents .main-container .first-contents .first-container .second-content .first-content-wrapper,
+  .main-contents .main-container .first-contents .first-container .second-content .third-content-wrapper,
+  .main-contents .main-container .first-contents .first-container .third-content .first-content-wrapper,
+  .main-contents .main-container .first-contents .first-container .third-content .third-content-wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  .main-contents .main-container .first-contents .first-container .first-content .first-content-wrapper .fl-content,
+  .main-contents .main-container .first-contents .first-container .first-content .first-content-wrapper .tl-content,
+  .main-contents .main-container .first-contents .first-container .first-content .first-content-wrapper .sr-content,
+  .main-contents .main-container .first-contents .first-container .first-content .third-content-wrapper .fl-content,
+  .main-contents .main-container .first-contents .first-container .first-content .third-content-wrapper .tl-content,
+  .main-contents .main-container .first-contents .first-container .first-content .third-content-wrapper .sr-content,
+  .main-contents .main-container .first-contents .first-container .second-content .first-content-wrapper .fl-content,
+  .main-contents .main-container .first-contents .first-container .second-content .first-content-wrapper .tl-content,
+  .main-contents .main-container .first-contents .first-container .second-content .first-content-wrapper .sr-content,
+  .main-contents .main-container .first-contents .first-container .second-content .third-content-wrapper .fl-content,
+  .main-contents .main-container .first-contents .first-container .second-content .third-content-wrapper .tl-content,
+  .main-contents .main-container .first-contents .first-container .second-content .third-content-wrapper .sr-content,
+  .main-contents .main-container .first-contents .first-container .third-content .first-content-wrapper .fl-content,
+  .main-contents .main-container .first-contents .first-container .third-content .first-content-wrapper .tl-content,
+  .main-contents .main-container .first-contents .first-container .third-content .first-content-wrapper .sr-content,
+  .main-contents .main-container .first-contents .first-container .third-content .third-content-wrapper .fl-content,
+  .main-contents .main-container .first-contents .first-container .third-content .third-content-wrapper .tl-content,
+  .main-contents .main-container .first-contents .first-container .third-content .third-content-wrapper .sr-content {
+    margin-top: 1rem;
+    width: 100% !important;
+  }
+  .main-contents .main-container .first-contents .first-container .first-content .first-content-wrapper .fl-content .feature,
+  .main-contents .main-container .first-contents .first-container .first-content .first-content-wrapper .tl-content .feature,
+  .main-contents .main-container .first-contents .first-container .first-content .first-content-wrapper .sr-content .feature,
+  .main-contents .main-container .first-contents .first-container .first-content .third-content-wrapper .fl-content .feature,
+  .main-contents .main-container .first-contents .first-container .first-content .third-content-wrapper .tl-content .feature,
+  .main-contents .main-container .first-contents .first-container .first-content .third-content-wrapper .sr-content .feature,
+  .main-contents .main-container .first-contents .first-container .second-content .first-content-wrapper .fl-content .feature,
+  .main-contents .main-container .first-contents .first-container .second-content .first-content-wrapper .tl-content .feature,
+  .main-contents .main-container .first-contents .first-container .second-content .first-content-wrapper .sr-content .feature,
+  .main-contents .main-container .first-contents .first-container .second-content .third-content-wrapper .fl-content .feature,
+  .main-contents .main-container .first-contents .first-container .second-content .third-content-wrapper .tl-content .feature,
+  .main-contents .main-container .first-contents .first-container .second-content .third-content-wrapper .sr-content .feature,
+  .main-contents .main-container .first-contents .first-container .third-content .first-content-wrapper .fl-content .feature,
+  .main-contents .main-container .first-contents .first-container .third-content .first-content-wrapper .tl-content .feature,
+  .main-contents .main-container .first-contents .first-container .third-content .first-content-wrapper .sr-content .feature,
+  .main-contents .main-container .first-contents .first-container .third-content .third-content-wrapper .fl-content .feature,
+  .main-contents .main-container .first-contents .first-container .third-content .third-content-wrapper .tl-content .feature,
+  .main-contents .main-container .first-contents .first-container .third-content .third-content-wrapper .sr-content .feature {
+    margin-bottom: 1.3rem;
+  }
+  .main-contents .main-container .first-contents .first-container .first-content .first-content-wrapper .fl-content h3 br,
+  .main-contents .main-container .first-contents .first-container .first-content .first-content-wrapper .tl-content h3 br,
+  .main-contents .main-container .first-contents .first-container .first-content .first-content-wrapper .sr-content h3 br,
+  .main-contents .main-container .first-contents .first-container .first-content .third-content-wrapper .fl-content h3 br,
+  .main-contents .main-container .first-contents .first-container .first-content .third-content-wrapper .tl-content h3 br,
+  .main-contents .main-container .first-contents .first-container .first-content .third-content-wrapper .sr-content h3 br,
+  .main-contents .main-container .first-contents .first-container .second-content .first-content-wrapper .fl-content h3 br,
+  .main-contents .main-container .first-contents .first-container .second-content .first-content-wrapper .tl-content h3 br,
+  .main-contents .main-container .first-contents .first-container .second-content .first-content-wrapper .sr-content h3 br,
+  .main-contents .main-container .first-contents .first-container .second-content .third-content-wrapper .fl-content h3 br,
+  .main-contents .main-container .first-contents .first-container .second-content .third-content-wrapper .tl-content h3 br,
+  .main-contents .main-container .first-contents .first-container .second-content .third-content-wrapper .sr-content h3 br,
+  .main-contents .main-container .first-contents .first-container .third-content .first-content-wrapper .fl-content h3 br,
+  .main-contents .main-container .first-contents .first-container .third-content .first-content-wrapper .tl-content h3 br,
+  .main-contents .main-container .first-contents .first-container .third-content .first-content-wrapper .sr-content h3 br,
+  .main-contents .main-container .first-contents .first-container .third-content .third-content-wrapper .fl-content h3 br,
+  .main-contents .main-container .first-contents .first-container .third-content .third-content-wrapper .tl-content h3 br,
+  .main-contents .main-container .first-contents .first-container .third-content .third-content-wrapper .sr-content h3 br {
+    display: none;
+  }
+  .main-contents .main-container .first-contents .first-container .first-content .first-content-wrapper .fr-content, .main-contents .main-container .first-contents .first-container .first-content .first-content-wrapper .tr-content, .main-contents .main-container .first-contents .first-container .first-content .first-content-wrapper .sl-content,
+  .main-contents .main-container .first-contents .first-container .first-content .third-content-wrapper .fr-content,
+  .main-contents .main-container .first-contents .first-container .first-content .third-content-wrapper .tr-content,
+  .main-contents .main-container .first-contents .first-container .first-content .third-content-wrapper .sl-content,
+  .main-contents .main-container .first-contents .first-container .second-content .first-content-wrapper .fr-content,
+  .main-contents .main-container .first-contents .first-container .second-content .first-content-wrapper .tr-content,
+  .main-contents .main-container .first-contents .first-container .second-content .first-content-wrapper .sl-content,
+  .main-contents .main-container .first-contents .first-container .second-content .third-content-wrapper .fr-content,
+  .main-contents .main-container .first-contents .first-container .second-content .third-content-wrapper .tr-content,
+  .main-contents .main-container .first-contents .first-container .second-content .third-content-wrapper .sl-content,
+  .main-contents .main-container .first-contents .first-container .third-content .first-content-wrapper .fr-content,
+  .main-contents .main-container .first-contents .first-container .third-content .first-content-wrapper .tr-content,
+  .main-contents .main-container .first-contents .first-container .third-content .first-content-wrapper .sl-content,
+  .main-contents .main-container .first-contents .first-container .third-content .third-content-wrapper .fr-content,
+  .main-contents .main-container .first-contents .first-container .third-content .third-content-wrapper .tr-content,
+  .main-contents .main-container .first-contents .first-container .third-content .third-content-wrapper .sl-content {
+    margin: 0px;
+    width: 100%;
+  }
+  .main-contents .main-container .second-contents {
+    padding-bottom: 0rem;
+  }
+  .main-contents .main-container .second-contents h2 {
+    padding-top: 4rem;
+    margin-bottom: 5rem;
+  }
+  .main-contents .main-container .second-contents .wp {
+    width: 90%;
+  }
+  .main-contents .main-container .second-contents .wp .wrapper {
+    width: 300px !important;
+  }
+  .main-contents .main-container .second-contents .wp .wrapper .pic {
+    height: 209px !important;
+  }
+  .main-contents .main-container .third-contents .third-container .second-block .faq-list .faq-list-q {
+    padding-right: 2.5rem;
+  }
+  .main-contents .main-container .third-contents .third-container .second-block .faq-list .faq-list-q:before {
+    width: 16px !important;
+    height: 1px;
+  }
+  .main-contents .main-container .third-contents .third-container .second-block .faq-list .faq-list-q:after {
+    height: 16px !important;
+    right: 16px !important;
+    width: 1px;
+  }
+  .main-contents .main-container .third-contents .third-container .second-block .faq-list .faq-list-a {
+    padding-right: 1.625rem;
+  }
+  .main-contents .main-container .third-contents .third-container .third-block {
+    width: 90% !important;
+  }
+  .main-contents .main-container .third-contents .third-container .third-block .info {
+    margin: 0 auto;
+  }
+  .main-contents .main-container .third-contents .third-container .third-block .info .info-item time {
+    font-size: 1rem;
+  }
 }
 
 @media (max-width: 768px) {
@@ -1039,19 +1216,19 @@ a, a:visited, a:hover, a:active {
   .header .header-inner .globalNav {
     position: fixed;
     opacity: 0;
-    top: 0px;
+    top: 60px;
     left: 0px;
     width: 100%;
     height: 100%;
     color: #fff;
-    background: rgba(151, 143, 16, 0.9);
+    background: #fff;
     text-align: center;
     opacity: 0;
-    -webkit-transition: 0.6s ease-in-out;
-    transition: 0.6s ease-in-out;
+    -webkit-transition: 0.4s ease-in-out;
+    transition: 0.4s ease-in-out;
     visibility: hidden;
-    padding-top: 195px;
-    font-size: 24px;
+    padding-top: 130px;
+    font-size: 1.5rem;
     z-index: 3;
   }
   .header .header-inner .globalNav .topics {
@@ -1068,7 +1245,7 @@ a, a:visited, a:hover, a:active {
   }
   .header .header-inner .globalNav .topics li:not(:last-child) {
     margin-right: 0;
-    margin-bottom: 40px;
+    margin-bottom: 30px;
   }
   .header .header-inner .gnav-btn {
     -webkit-box-ordinal-group: 3;
@@ -1080,8 +1257,8 @@ a, a:visited, a:hover, a:active {
     width: 26px;
     height: 26px;
     cursor: pointer;
-    -webkit-transition: all 0.4s ease-in-out;
-    transition: all 0.4s ease-in-out;
+    -webkit-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
     z-index: 4;
   }
   .header .header-inner .gnav-btn span {
@@ -1089,11 +1266,11 @@ a, a:visited, a:hover, a:active {
     width: 100%;
     height: 2px;
     display: inline-block;
-    background: #000000;
+    background: #1B224C;
     border-radius: 10px;
-    transition: all 0.4s ease-in-out;
-    -webkit-transition: all 0.4s ease-in-out;
-    -moz-transition: 0.3s ease-in-out;
+    transition: all 0.2s ease-in-out;
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: 0.2s ease-in-out;
   }
   .header .header-inner .gnav-btn span:nth-child(1) {
     top: 20%;
@@ -1129,7 +1306,7 @@ a, a:visited, a:hover, a:active {
         -ms-flex-direction: column;
             flex-direction: column;
     text-align: center;
-    font-size: 23px;
+    font-size: 1.5rem;
     letter-spacing: 4px;
   }
   .header .header-inner .globalNav.slide-in .topics a {
@@ -1159,6 +1336,7 @@ a, a:visited, a:hover, a:active {
   }
   .main-view {
     height: auto;
+    padding-top: 60px;
   }
   .main-view .upper-view {
     height: 440px;
@@ -1187,6 +1365,7 @@ a, a:visited, a:hover, a:active {
     font-weight: normal;
     margin-left: 1rem;
     margin-right: 1rem;
+    line-height: 1.9rem;
   }
   .main-view .bottom-view .bv-list {
     width: 90%;
@@ -1194,11 +1373,14 @@ a, a:visited, a:hover, a:active {
   .main-view .bottom-view .bv-list .bv-wrap {
     border: 3px solid #1b224c;
   }
+  .main-view .bottom-view .bv-list .bv-wrap p {
+    margin-top: 2rem;
+  }
   .main-contents .main-container .first-contents {
     padding-bottom: 4rem;
   }
   .main-contents .main-container .first-contents .first-container {
-    width: 96%;
+    width: 90%;
     margin: 0 auto;
   }
   .main-contents .main-container .first-contents .first-container h2 {
@@ -1312,7 +1494,7 @@ a, a:visited, a:hover, a:active {
     line-height: 2rem;
   }
   .main-contents .main-container .first-contents .price {
-    width: 96%;
+    width: 90%;
     margin: 0 auto;
   }
   .main-contents .main-container .first-contents .price h3 {
@@ -1333,7 +1515,6 @@ a, a:visited, a:hover, a:active {
     margin-bottom: 5rem;
   }
   .main-contents .main-container .second-contents .wp {
-    width: 96%;
     margin: 0 auto;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -1344,24 +1525,61 @@ a, a:visited, a:hover, a:active {
     margin-right: auto;
     margin-left: auto;
     margin-bottom: 5rem;
-    max-width: 300px;
+    max-width: 400px;
+    width: 100%;
   }
   .main-contents .main-container .second-contents .wp .wrapper p {
     font-weight: normal;
+  }
+  .main-contents .main-container .second-contents .wp .wrapper .pic {
+    height: 244px;
   }
   .main-contents .main-container .third-contents .third-container h2 {
     padding-bottom: 1.8rem;
   }
   .main-contents .main-container .third-contents .third-container .first-block {
-    width: 96%;
+    height: auto;
+    width: 90%;
     margin: 0 auto;
     height: auto;
     margin-bottom: 7rem;
   }
+  .main-contents .main-container .third-contents .third-container .first-block .fb-item {
+    height: 6rem;
+  }
+  .main-contents .main-container .third-contents .third-container .first-block .fb-item .number {
+    padding-top: 2.4rem;
+    width: 100%;
+    max-width: 40px;
+    height: 100%;
+    padding-left: .8rem;
+  }
+  .main-contents .main-container .third-contents .third-container .first-block .fb-item .fb-info h4 {
+    max-width: 130px;
+    width: 100%;
+  }
+  .main-contents .main-container .third-contents .third-container .first-block .fb-item .fb-info h4:before {
+    width: 50px;
+    bottom: 40px;
+  }
+  .main-contents .main-container .third-contents .third-container .first-block .fb-item .fb-info p {
+    padding-left: 2rem;
+    line-height: 1.7rem;
+  }
   .main-contents .main-container .third-contents .third-container .second-block {
-    width: 96%;
+    width: 90%;
     margin: 0 auto;
     margin-bottom: 7rem;
+  }
+  .main-contents .main-container .third-contents .third-container .second-block .faq-list .faq-list-q:before {
+    width: 20px;
+  }
+  .main-contents .main-container .third-contents .third-container .second-block .faq-list .faq-list-q:after {
+    height: 20px;
+    right: 17px;
+  }
+  .main-contents .main-container .third-contents .third-container .second-block .faq-list .faq-list-a {
+    padding-right: 2.5rem;
   }
   .main-contents .main-container .third-contents .third-container .third-block {
     width: 96%;
@@ -1380,12 +1598,19 @@ a, a:visited, a:hover, a:active {
     text-align: center;
     font-size: 1.5rem !important;
   }
+  .main-contents .main-container .third-contents .third-container .third-block .blog .blog-item .blog-info time {
+    font-size: 1rem;
+    margin-top: 3rem;
+  }
   .main-contents .main-container .third-contents .third-container .third-block .info {
     margin: 0 auto;
   }
   .main-contents .main-container .third-contents .third-container .third-block .info h3 {
     text-align: center;
     font-size: 1.5rem !important;
+  }
+  .main-contents .main-container .third-contents .third-container .third-block .info .info-item time {
+    font-size: 1rem;
   }
   .footer {
     height: auto;
@@ -1410,12 +1635,7 @@ a, a:visited, a:hover, a:active {
     margin-top: 1.8rem;
   }
   .footer .upper-footer .upper-bottom {
-    height: 100%;
-  }
-  .footer .upper-footer .upper-bottom .upper-bottom-wrap {
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    display: none;
   }
   .footer .bottom-footer {
     height: auto;
@@ -1425,7 +1645,7 @@ a, a:visited, a:hover, a:active {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    height: 180px;
+    height: 160px;
   }
   .footer .bottom-footer .bottom-upper .footer-menu {
     margin: 0 auto;
@@ -1434,7 +1654,7 @@ a, a:visited, a:hover, a:active {
     padding-left: 1rem;
   }
   .footer .bottom-footer .bottom-upper .footer-menu a {
-    margin-top: 3rem;
+    margin-top: 2.3rem;
     padding-left: 1rem;
     padding-right: 1rem;
   }
@@ -1453,8 +1673,8 @@ a, a:visited, a:hover, a:active {
     margin-right: 2rem;
   }
   .footer .bottom-footer .bottom-upper .footer-logo .logo img {
-    width: 120px;
-    height: 25px;
+    width: 110px;
+    height: 21.8px;
   }
   .footer .bottom-footer .bottom-upper .footer-logo .contacts {
     margin-left: 2rem;
