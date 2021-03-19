@@ -993,7 +993,7 @@ a, a:visited, a:hover, a:active {
     font-size: 1.1rem !important;
   }
   html {
-    font-size: 14px;
+    font-size: 12px !important;
   }
   .header {
     height: 60px;
@@ -1194,6 +1194,9 @@ a, a:visited, a:hover, a:active {
   .main-view .bottom-view .bv-list .bv-wrap {
     border: 3px solid #1b224c;
   }
+  .main-contents .main-container .first-contents {
+    padding-bottom: 4rem;
+  }
   .main-contents .main-container .first-contents .first-container {
     width: 96%;
     margin: 0 auto;
@@ -1204,7 +1207,7 @@ a, a:visited, a:hover, a:active {
   .main-contents .main-container .first-contents .first-container .first-content,
   .main-contents .main-container .first-contents .first-container .second-content,
   .main-contents .main-container .first-contents .first-container .third-content {
-    margin-bottom: 4.5rem;
+    margin-bottom: 6.5rem;
   }
   .main-contents .main-container .first-contents .first-container .first-content .first-content-wrapper,
   .main-contents .main-container .first-contents .first-container .first-content .second-content-wrapper,
@@ -1308,37 +1311,157 @@ a, a:visited, a:hover, a:active {
     margin-bottom: 1.3rem;
     line-height: 2rem;
   }
-  .footer .upper_footer .footer_menu {
-    padding-top: 50px;
-    padding-bottom: 100px;
-    width: 144px;
+  .main-contents .main-container .first-contents .price {
+    width: 96%;
+    margin: 0 auto;
   }
-  .footer .upper_footer .footer_menu a {
-    font-size: 14px;
+  .main-contents .main-container .first-contents .price h3 {
+    padding-top: 3rem;
+    margin-bottom: 2.5rem;
   }
-  .footer .upper_footer .footer_image {
-    margin-bottom: 100px;
+  .main-contents .main-container .first-contents .price a.button3 {
+    width: 10rem;
+    border-radius: .5rem;
+    font-size: .9rem;
+    padding-top: .9rem;
   }
-  .footer .upper_footer .footer_image img {
-    width: 120px;
+  .main-contents .main-container .second-contents {
+    padding-bottom: 0rem;
   }
-  .footer .upper_footer .footer_access p {
-    font-size: 12px;
+  .main-contents .main-container .second-contents h2 {
+    padding-top: 4rem;
+    margin-bottom: 5rem;
   }
-  .footer .upper_footer .footer_access .add_wrap {
-    display: block;
+  .main-contents .main-container .second-contents .wp {
+    width: 96%;
+    margin: 0 auto;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .main-contents .main-container .second-contents .wp .wrapper {
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 5rem;
+    max-width: 300px;
+  }
+  .main-contents .main-container .second-contents .wp .wrapper p {
+    font-weight: normal;
+  }
+  .main-contents .main-container .third-contents .third-container h2 {
+    padding-bottom: 1.8rem;
+  }
+  .main-contents .main-container .third-contents .third-container .first-block {
+    width: 96%;
+    margin: 0 auto;
+    height: auto;
+    margin-bottom: 7rem;
+  }
+  .main-contents .main-container .third-contents .third-container .second-block {
+    width: 96%;
+    margin: 0 auto;
+    margin-bottom: 7rem;
+  }
+  .main-contents .main-container .third-contents .third-container .third-block {
+    width: 96%;
+    margin: 0 auto;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .main-contents .main-container .third-contents .third-container .third-block .blog {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 7rem;
+  }
+  .main-contents .main-container .third-contents .third-container .third-block .blog h3 {
     text-align: center;
+    font-size: 1.5rem !important;
   }
-  .footer .upper_footer .footer_access .add_wrap p {
-    margin-left: 0px;
-    margin-bottom: 10px;
+  .main-contents .main-container .third-contents .third-container .third-block .info {
+    margin: 0 auto;
   }
-  .footer .upper_footer .footer_access .tel-wrap {
-    display: block;
+  .main-contents .main-container .third-contents .third-container .third-block .info h3 {
+    text-align: center;
+    font-size: 1.5rem !important;
   }
-  .footer .upper_footer .footer_access .tel-wrap p {
-    margin-bottom: 10px;
-    font-size: 12px;
+  .footer {
+    height: auto;
+  }
+  .footer .upper-footer {
+    height: auto;
+  }
+  .footer .upper-footer .upper-upper {
+    height: 220px;
+  }
+  .footer .upper-footer .upper-upper h3 {
+    padding-top: 3rem;
+    letter-spacing: .1rem;
+  }
+  .footer .upper-footer .upper-upper a.rq {
+    margin-top: 2rem;
+    width: 12rem;
+    padding-top: 1.2rem;
+    border-radius: 10px;
+  }
+  .footer .upper-footer .upper-upper a.ct {
+    margin-top: 1.8rem;
+  }
+  .footer .upper-footer .upper-bottom {
+    height: 100%;
+  }
+  .footer .upper-footer .upper-bottom .upper-bottom-wrap {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .footer .bottom-footer {
+    height: auto;
+  }
+  .footer .bottom-footer .bottom-upper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: 180px;
+  }
+  .footer .bottom-footer .bottom-upper .footer-menu {
+    margin: 0 auto;
+  }
+  .footer .bottom-footer .bottom-upper .footer-menu a:first-of-type {
+    padding-left: 1rem;
+  }
+  .footer .bottom-footer .bottom-upper .footer-menu a {
+    margin-top: 3rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  .footer .bottom-footer .bottom-upper .footer-logo {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 2.3rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .footer .bottom-footer .bottom-upper .footer-logo .logo {
+    margin-top: 0px;
+    width: 150px;
+    height: 45px;
+    margin-right: 2rem;
+  }
+  .footer .bottom-footer .bottom-upper .footer-logo .logo img {
+    width: 120px;
+    height: 25px;
+  }
+  .footer .bottom-footer .bottom-upper .footer-logo .contacts {
+    margin-left: 2rem;
+    margin-top: 0rem;
+  }
+  .footer .bottom-footer .bottom-bottom p {
+    text-align: center;
   }
 }
 /*# sourceMappingURL=style.css.map */

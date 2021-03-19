@@ -195,6 +195,7 @@ html {
 .main-contents {
   .main-container {
     .first-contents {
+      padding-bottom: 4rem;
       .first-container {
         width: 96%;
         margin: 0 auto;
@@ -204,7 +205,7 @@ html {
         .first-content,
         .second-content,
         .third-content {
-          margin-bottom: 4.5rem;
+          margin-bottom: 6.5rem;
           .first-content-wrapper,
           .second-content-wrapper,
           .third-content-wrapper {
@@ -228,47 +229,174 @@ html {
             // }
           }
         }
+      }// first-containerのとじタグ
+      .price{
+        width: 96%;
+        margin: 0 auto;
+        h3{
+          padding-top: 3rem;
+          margin-bottom: 2.5rem;
+        }
+        a.button3{
+          width: 10rem;
+          border-radius: .5rem;
+          font-size: .9rem;
+          padding-top: .9rem;
+        }
       }
-    }
+    }// first-contentsのとじタグ
+    .second-contents{
+      padding-bottom: 0rem;
+      h2{
+        padding-top: 4rem;
+        margin-bottom: 5rem;
+      }
+      .wp{
+        width: 96%;
+        margin: 0 auto;
+        flex-direction: column;
+        .wrapper{
+          margin-right:auto;
+          margin-left: auto;
+          margin-bottom: 5rem;
+          max-width: 300px;
+          p{
+            font-weight: normal;
+          }
+        }// wrapperのとじタグ
+      }// wpのとじタグ
+    }// second-contentsのとじタグ
+    .third-contents{
+      .third-container{
+        & h2{
+          padding-bottom: 1.8rem;
+        }
+        .first-block{
+          width: 96%;
+          margin: 0 auto;
+          height: auto;
+          margin-bottom: 7rem;
+        }// first-blockのとじタグ
+
+        .second-block{
+          width: 96%;
+          margin: 0 auto;
+          margin-bottom: 7rem;
+
+        }// second-blockのとじタグ
+
+        .third-block{
+          width: 96%;
+          margin: 0 auto;
+          flex-direction: column;
+          .blog{
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: 7rem;
+            & h3{
+              text-align: center;
+              font-size: 1.5rem !important;
+            }
+          }
+          .info{
+            margin: 0 auto;
+            & h3{
+              text-align: center;
+              font-size: 1.5rem !important;
+            }
+          }
+        }// third-blockのとじタグ
+      }// .third-containerのとじタグ
+    }// third-contentsのとじタグ
   }
 }
 
-.footer {
-  .upper_footer {
-    .footer_menu {
-      padding-top: 50px;
-      padding-bottom: 100px;
-      width: 144px;
-      & a {
-        font-size: 14px;
+
+
+
+
+
+
+.footer{
+  height: auto;
+  .upper-footer{
+    height: auto;
+    .upper-upper{
+      height: 220px;
+      & h3{
+        padding-top: 3rem;
+        letter-spacing: .1rem;
+      }
+      & a.rq{
+        margin-top: 2rem;
+        width: 12rem;
+        padding-top: 1.2rem;
+        border-radius: 10px;
+      }
+      & a.ct{
+        margin-top: 1.8rem;
+      }
+    }// upper-upperのとじタグ
+
+
+    .upper-bottom{
+      height: 100%;
+      .upper-bottom-wrap{
+        justify-content: center;
+      }
+    }// upper-bottomのとじタグ
+  }// upper-footerのとじタグ
+
+
+
+  .bottom-footer{
+    height: auto;
+    .bottom-upper{
+      flex-direction: column;
+      height: 180px;
+      .footer-menu{
+        margin: 0 auto;
+        a:first-of-type{
+          padding-left: 1rem;
+        }
+        a{
+          margin-top: 3rem;
+          padding-left: 1rem;
+          padding-right: 1rem;
+        }
+      }
+      .footer-logo{
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 2.3rem;
+        display: flex;
+        .logo{
+          margin-top: 0px;
+          width: 150px;
+          height: 45px;
+          margin-right: 2rem;
+          img{
+            width: 120px;
+            height: 25px;
+          }
+        }
+        .contacts{
+          margin-left: 2rem;
+          margin-top: 0rem;
+          // text-align: center;
+          // padding-bottom: 2rem;
+          p {
+            // margin-top: .7rem;
+          }
+        }
       }
     }
-    .footer_image {
-      margin-bottom: 100px;
-      & img {
-        width: 120px;
-      }
-    }
-    .footer_access {
-      & p {
-        font-size: 12px;
-      }
-      .add_wrap {
-        display: block;
+
+
+
+    .bottom-bottom{
+      & p{
         text-align: center;
-        & p {
-          // display: block;
-          // flex-direction: column;
-          margin-left: 0px;
-          margin-bottom: 10px;
-        }
-      }
-      .tel-wrap {
-        display: block;
-        p {
-          margin-bottom: 10px;
-          font-size: 12px;
-        }
       }
     }
   }
