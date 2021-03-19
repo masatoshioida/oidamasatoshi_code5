@@ -106,9 +106,9 @@ body{
 .main-container{
   background-color: lightskyblue;
 }
-.first-contents{
-  background-color: navajowhite;
-}
+// .first-contents{
+//   background-color: navajowhite;
+// }
 .second-contents{
   background-color: plum;
 }
@@ -317,9 +317,10 @@ body{
     z-index: 0;
     .bv-wrap{
       display: inline-block;
-      margin-top: 10px;
-      width: 868px;
-      height: 225px;
+      margin-top: .625rem;
+      width: 96.44%;
+      max-width: 868px;
+      height: 14.0625rem;
       border: 5px solid #1B224C;
       z-index: 10;
     & h2{
@@ -371,31 +372,32 @@ body{
 
     .first-contents {
       height: 1341px;
-      width: 900px;
+      max-width: 900px;
       margin: 0 auto;
       .first-container{
         & h2{
           font-size: 2rem;
-          padding-top: 3.5rem;
+          padding-top: 3.6875rem;
           text-align: center;
-          padding-bottom: 3.5rem;
+          padding-bottom: 3.6875rem;
         }
 
 
 
         .first-content, .second-content, .third-content{
-          height: 240px;
-          background-color: lavenderblush;
-          margin-bottom: 60px;
+          height: 15rem;
+          // background-color: lavenderblush;
+          margin-bottom: 3.75rem;
           .first-content-wrapper, .second-content-wrapper, .third-content-wrapper {
             display: flex;
             height: 100%;
 
             .fl-content, .tl-content, .sr-content {
+              width: 55.5555%;
               .feature{
-                width: 90px;
-                height: 30px;
-                font-size: 12px;
+                width: 5.625rem;
+                height: 1.875rem;
+                font-size: .75rem;
                 background: #F5A623 0% 0% no-repeat padding-box;
                 margin-bottom: 2rem;
                 color: #ffffff;
@@ -407,7 +409,8 @@ body{
                 margin-bottom: 1.8rem;
               }
               & p {
-                width: 500px;
+                // width: 500px;
+                // width: 55.55555%;
               }
             }
             .fr-content, .tr-content, .sl-content {
@@ -422,9 +425,9 @@ body{
           }
         }
         .second-content{
-          height: 240px;
-          background-color: lemonchiffon;
-          margin-bottom: 60px;
+          height: 15rem;
+          // background-color: lemonchiffon;
+          margin-bottom: 3.75rem;
           .second-content-wrapper{
             .sl-content{
               margin: 0 auto 0 0;
@@ -432,14 +435,14 @@ body{
           }
         }
         .third-content{
-          height: 240px;
-          background-color: lightblue;
-          margin-bottom: 93px;
+          height: 15rem;
+          // background-color: lightblue;
+          margin-bottom: 5.8125rem;
         }
       } // first-containerのとじタグ
       .price{
-        height: 217px;
-        background-color: lightcoral;
+        height: 13.5625rem;
+        // background-color: lightcoral;
         background: transparent url('images/price.png') 0% 0% no-repeat padding-box;
         background-position: center;
         background-size: cover;
@@ -453,9 +456,9 @@ body{
         a.button3{
           display: inline-block;
           border: 1px solid #FFFFFF;
-          border-radius: 30px;
-        width: 200px;
-        height: 50px;
+          border-radius: 1.875rem;
+        width: 12.5rem;
+        height: 3.125rem;
         padding-top: .8rem;
         // padding-left: 2.9rem;
         color: #FFFFFF;
@@ -466,10 +469,12 @@ body{
 
 
     .second-contents {
-      height: 608px;
+      // height: 608px;
+      height: auto;
       background-color: #1B224C;
       color: #ffffff;
       text-align: center;
+      padding-bottom: 3.75rem;
       & h2{
         font-size: 2rem;
         padding-top: 3.625rem;
@@ -477,11 +482,11 @@ body{
       }
       .wp{
         display: flex;
-        width: 900px;
+        max-width: 900px;
         margin: 0 auto;
         justify-content: space-between;
         .wrapper{
-          width: calc(33.33333333% - 30px * 2 / 3);
+          max-width: calc(33.33333333% - 30px * 2 / 3);
           p {
             text-align: left;
             line-height: 1.8rem;
@@ -492,8 +497,10 @@ body{
             background-color: #FFFFFF;
             height: 171px;
             img{
-              width: 45%;
-              margin-top: 1.9rem;
+              // width: 100%;
+              height: 100%;
+              object-fit: cover;
+              // margin-top: 1.9rem;
             }
           }
           .details{
@@ -722,7 +729,7 @@ body{
 
         .third-block{
           display: flex;
-          background-color: lightgrey;
+          // background-color: lightgrey;
           height: auto;
           padding-bottom: 6.5rem;
           .blog{
