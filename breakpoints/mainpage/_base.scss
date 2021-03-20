@@ -1300,3 +1300,134 @@ a, a:visited, a:hover, a:active {
 
   }
 }
+
+
+
+
+
+
+// ----------------//
+// 以下、contact.htmlのスタイル
+
+.top-pic-contact{
+  padding-top: 80px;
+  background: transparent url('images/cta.png') 0% 0% no-repeat padding-box;
+  background-position: center;
+  background-size: cover;
+  object-fit: cover;
+  height: 301px;
+  & h2{
+    margin-top: 5rem;
+    font-size: 2rem;
+    color: #FFFFFF;
+    text-align: center;
+  }
+}
+
+.contact-detail{
+  width: 700px;
+  margin: 0 auto;
+  .contact-form{
+    margin-top: 3.625rem;
+    margin-bottom: 5.125rem;
+    .intro{
+      margin-bottom: 2.5625rem;
+      line-height: 2rem;
+    }
+    .box{
+      display: flex;
+      flex-direction: column;
+      label{
+        margin-bottom: .75rem;
+      }
+    }
+    #company, #name, #mail, #tel{
+      margin-bottom: 1.25rem;
+      border: 0.5px solid #1B224C;
+      height: 50px;
+      font-size: .75rem;
+      padding-left: 20px;
+    }
+    .radio-box{
+      // display: flex;
+      // flex-direction: column;
+      p{
+        margin-bottom: 1.3125rem;
+      }
+      span{
+        font-weight: bold;
+      }
+      label{
+        display: block;
+        margin-bottom: 1.125rem;
+      }
+    }
+    textarea{
+      height: 240px;
+    }
+
+    .box1 {
+          margin-top: 1.875rem;
+          text-align: center;
+          p{
+            margin-bottom: 2.0625rem;
+            span{
+              color: #F5A623;
+              text-decoration: underline;
+            }
+          }
+    }
+
+    /* ラベルのスタイル　*/
+    .box1 label {
+      padding-left:		30px;			/* ラベルの位置 */
+      display:		inline-block;
+      cursor:			pointer;
+      position:		relative;
+      margin-bottom: 3rem;
+    }
+
+    /* ボックスのスタイル */
+    .box1 label:before {
+      content:		'';
+      width:			20px;			/* ボックスの横幅 */
+      height:			20px;			/* ボックスの縦幅 */
+      display:		inline-block;
+      position:		absolute;
+      left:			0;
+      background-color:	#fff;
+      // box-shadow:		inset 1px 2px 3px 0px #000;
+      border: 1px solid #707070;
+      // border-radius:		6px 6px 6px 6px;
+    }
+    /* 元のチェックボックスを表示しない */
+    .box1 input[type=checkbox] {
+      display:		none;
+    }
+    /* チェックした時のスタイル */
+    .box1 input[type=checkbox]:checked + label:before {
+      content:		'\2713';		/* チェックの文字 */
+      font-size:		20px;			/* チェックのサイズ */
+      color:			#fff;			/* チェックの色 */
+      background-color:	#06f;			/* チェックした時の色 */
+    }
+
+    #js-submit{
+      display: block;
+      margin: 0 auto;
+      width: 200px;
+      height: 50px;
+      color: #ffffff;
+      align-items: center;
+      background: #1B224C 0% 0% no-repeat padding-box;
+      border-radius: 5px;
+    }
+
+
+  }// contact-form
+}
+
+// 要注意
+.footer{
+  height: auto;
+}
