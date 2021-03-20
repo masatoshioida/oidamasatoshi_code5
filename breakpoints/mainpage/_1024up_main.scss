@@ -1,8 +1,44 @@
+.header{
+  .logo{
+    img{
+      width: 7.5rem;
+      margin-right: .8rem;
+      margin-left: .5rem;
+    }
+  }
+  .globalNav{
+    .topics{
+      & a{
+        margin-right: .7rem;
+        font-size: .8rem;
+      }
+    }
+  }
+  .contact-time{
+    margin-right: .5rem;
+  }
+  a.button1{
+    width: 7rem;
+    height: 2.5rem;
+    margin-right: .3rem;
+    padding-top: .7rem;
+    padding-left: 1.8rem;
+  }
+  a.button2{
+    width: 8rem;
+    height: 2.5rem;
+    padding-top: .7rem;
+    padding-left: 1.3rem;
+  }
+}
 
 
-// .main-view{
-//   .upper-view{
-//     & h1{
-//     }
-//   }
-// }
+
+.main-view{
+  .bottom-view{
+    .bv-list{
+      width: 90%;
+      margin: 0 auto;
+    }
+  }
+}
