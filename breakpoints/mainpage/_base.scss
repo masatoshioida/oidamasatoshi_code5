@@ -771,7 +771,14 @@ a, a:visited, a:hover, a:active {
               .blog-info{
                 margin-left: 1.25rem;
                 width: 260px;
-                & h4{
+                // & h4{
+                //   font-size: 1rem;
+                //   line-height: 1.7rem;
+                //   text-decoration: underline;
+                // }
+                & a{
+                  display: block;
+                  font-weight: bold;
                   font-size: 1rem;
                   line-height: 1.7rem;
                   text-decoration: underline;
@@ -801,7 +808,12 @@ a, a:visited, a:hover, a:active {
                 display: inline-block;
                 margin-bottom: 1rem;
               }
-              & p{
+              // & p{
+              //   font-size: 1rem;
+              //   text-decoration: underline;
+              // }
+              & a{
+                display: block;
                 font-size: 1rem;
                 text-decoration: underline;
               }
@@ -1034,8 +1046,10 @@ a, a:visited, a:hover, a:active {
 
 .price-detail{
   height: auto;
+  // max-width: 900px;
+  // margin: 0 auto;
   .price-detail-1{
-    width: 900px;
+    max-width: 900px;
     margin: 0 auto;
     & h2{
       text-align: center;
@@ -1073,15 +1087,20 @@ a, a:visited, a:hover, a:active {
 
 
   .price-detail-2{
-    margin-top: 5.625rem;
-    margin-bottom: 3.875rem;
+    max-width: 900px;
+    margin: 0 auto;
+
     & h2{
+      margin-top: 5.625rem;
       font-size: 2rem;
       text-align: center;
     }
-
+    .price-scroll{
+      overflow-x: scroll;
+      margin-bottom: 3.875rem;
+    }
     .plan-wrap{
-      width: 900px;
+      max-width: 900px;
       margin:0 auto;
       display: flex;
     }
@@ -1126,6 +1145,9 @@ a, a:visited, a:hover, a:active {
         }
       }
     }// plan
+    .plan:nth-child(1){
+      margin-left: 0px;
+    }
     .plan:nth-child(3){
       margin-top: 4.375rem;
       height: 503px;

@@ -219,3 +219,53 @@ html{
     }// third-contentsのとじタグ
   }
 }
+
+
+
+
+
+
+
+
+// price.html---------------------
+
+.pan{
+  .pan-wrap{
+    padding-top: 1.3rem !important;
+  }
+}
+
+.top-pic-price{
+  h2{
+    margin-top: 7rem;
+  }
+}
+
+
+
+.price-detail{
+  .price-detail-1{
+    .enter-price-wrap{
+      .plus{
+        margin: 0 1.5rem 0 1.5rem;
+      }
+    }
+  }
+  .price-detail-2{
+    .price-scroll{
+      .plan-wrap{
+        .plan{
+          .memo{
+            height: 400px;
+          }
+        }
+        .plan:nth-child(3){
+          .plan-title{
+            height: 72px;
+          }
+        }
+      }
+    }
+  }
+
+}

@@ -471,3 +471,39 @@ html {
     }
   }
 }
+
+
+
+
+
+// price.html---------------
+
+
+.pan{
+  .pan-wrap{
+    padding-top: 1.1rem;
+    & a:nth-child(1){
+      margin-left: 2.5rem !important;
+    }
+  }
+}
+
+
+.price-detail{
+  .price-detail-1{
+    width: 90%;
+  }
+  .price-detail-2{
+    .plan-wrap{
+  max-width: none;
+  width: 768px !important;  /* コンテンツが見切れて見えるようにする */
+  // padding-right: 0px;
+  // padding-left: 0px;
+  // overflow-x: scroll;  /* 横スクロールの指定 */
+  display: -ms-flexbox;
+  white-space: nowrap;  /* 横スクロールの指定 */
+  // overflow-scrolling: touch;  /* スクロールを滑らかにする */
+  -webkit-overflow-scrolling: touch;  /* スクロールを滑らかにする */
+    }
+  }
+}

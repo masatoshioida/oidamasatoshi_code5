@@ -42,3 +42,28 @@
     }
   }
 }
+
+
+
+
+// price.html---------------------------
+
+
+.pan{
+  .pan-wrap{
+    & a:nth-child(1){
+      margin-left: 8.7rem;
+    }
+  }
+}
+
+
+.price-detail{
+  .price-detail-2{
+    .plan-wrap{
+  // padding-left: 1rem;
+  // padding-right: 1rem;
+  width: 90%;
+    }
+  }
+}
