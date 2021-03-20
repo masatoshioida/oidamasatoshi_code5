@@ -75,7 +75,7 @@ $(function () {
 //             0: function () {
 //               $(".end-message").slideDown();
 //               $(".button").fadeOut();
-//               window.location.href = "thanks.html";
+//               window.location.href = "send.html";
 //             },
 //             200: function () {
 //               $(".false-message").slideDown();
