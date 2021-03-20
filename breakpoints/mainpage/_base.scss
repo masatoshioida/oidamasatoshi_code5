@@ -989,9 +989,10 @@ a, a:visited, a:hover, a:active {
 
 
 
+//-------------------------//
 // 以下、price.htmlのスタイル
 
-.top-pic{
+.top-pic-price{
   padding-top: 80px;
   background: transparent url('images/plan.png') 0% 0% no-repeat padding-box;
   background-position: center;
@@ -1014,6 +1015,7 @@ a, a:visited, a:hover, a:active {
 
   & a:nth-child(1){
     margin-left: 11.875rem;
+    text-decoration: underline;
     // display: inline;
   }
   & a, a:visited, a:hover, a:active {
@@ -1134,4 +1136,108 @@ a, a:visited, a:hover, a:active {
     }
   }// .price-detail-2のとじタグ
 
+}
+
+
+
+
+
+
+
+//-------------------------//
+// 以下、blog.htmlのスタイル
+
+.top-pic-blog{
+  padding-top: 80px;
+  background: transparent url('images/blog.png') 0% 0% no-repeat padding-box;
+  background-position: center;
+  background-size: cover;
+  object-fit: cover;
+  height: 301px;
+  & h2{
+    margin-top: 5rem;
+    font-size: 2rem;
+    color: #FFFFFF;
+    text-align: center;
+  }
+}
+
+
+
+
+.blog-detail{
+  .blog-detail-1{
+    width: 900px;
+    margin: 0 auto;
+    h2{
+      margin-top: 3.625rem;
+      font-size: 2rem;
+      text-align: center;
+      margin-bottom: 3.75rem;
+    }
+
+    .blog-item{
+      display: flex;
+      position: relative;
+      margin-bottom: 5.8125rem;
+      & img{
+        width: 240px;
+        object-fit: cover;
+      }
+      .category{
+        width: 80px;
+        height: 28px;
+        background: #1B224C 0% 0% no-repeat padding-box;
+        border: 1px solid #707070;
+        position: absolute;
+        font-size: .75rem;
+        color: #FFFFFF;
+        text-align: center;
+        padding-top: .25rem;
+      }
+      .blog-info{
+        margin-left: 3.125rem;
+        width: 610px;
+        & time{
+          display: inline-block;
+          margin-bottom: .8rem;
+        }
+        & h4{
+          font-size: 1.625rem;
+          line-height: 2.4rem;
+          text-decoration: underline;
+          margin-bottom: 1rem;
+        }
+        & p{
+          line-height: 1.6rem;
+        }
+      }
+    }// blog-item
+  }
+}
+
+
+.page-nation{
+  .page-wrap{
+    display: flex;
+    justify-content: center;
+    .num{
+      width: 50px;
+      height: 50px;
+      font-weight: bold;
+      margin-left: 1.1875rem;
+      margin-bottom: 2.8125rem;
+      border: 1px solid #1B224C;
+    }
+    a{
+      display: block;
+      text-align: center;
+      padding-top: .8rem;
+    }
+    .num:nth-child(4){
+      // margin-left: 36px;
+      // margin-right: 36px;
+      border: none;
+    }
+  }
 }
