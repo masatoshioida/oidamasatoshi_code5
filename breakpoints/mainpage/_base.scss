@@ -1012,6 +1012,9 @@ a, a:visited, a:hover, a:active {
   background-color:#F8F8F8;
   display: flex;
   padding-top: .9rem;
+  // width: 100%;
+  // max-width: 1280px;
+  margin: 0 auto;
 
   & a:nth-child(1){
     margin-left: 11.875rem;
@@ -1268,7 +1271,6 @@ a, a:visited, a:hover, a:active {
 
 
 
-
 .news-detail{
   .news-detail-1{
     width: 900px;
@@ -1461,4 +1463,206 @@ a, a:visited, a:hover, a:active {
     display: block;
   }
 
+}
+
+
+
+
+
+
+
+// ----------------//
+// 以下、blog_detail.htmlのスタイル
+.top-pic-bd{
+  padding-top: 80px;
+}
+
+
+.all-wrap{
+  padding-top: 3.75rem;
+  padding-bottom: 4.3125rem;
+  display: flex;
+  width: 895px;
+  margin: 0 auto;
+  main{
+    width: 590px;
+    margin-right: 2.25rem;
+    article{
+      .category{
+        width: 7rem;
+        height: 1.9375rem;
+        background-color: #1B224C;
+        color: #FFFFFF;
+        padding-top: .4rem;
+        text-align: center;
+        font-size: .75rem;
+        margin-bottom: 1.875rem;
+      }
+      h1{
+        font-size: 1.75rem;
+        line-height: 2.5rem;
+        margin-bottom: .7rem;
+      }
+      time{
+        margin-bottom: 1.5625rem;
+        display: block;
+        text-align: right;
+      }
+      img{
+        width: 100%;
+      }
+      .blog-info{
+        h3{
+          font-size: 1.75rem;
+          margin-top: 2.5rem;
+          margin-bottom: 1.875rem;
+        }
+        p{
+          line-height: 1.5rem;
+          margin-bottom: 2.6rem;
+        }
+        h4{
+          font-size: 1.625rem;
+          border-left: 4px solid #1B224C;
+          margin-bottom: 1.6875rem;
+        }
+      }
+      .quote{
+        background: #F8F8F8 0% 0% no-repeat padding-box;
+        height: 6.5rem;
+        margin-bottom: 1.875rem;
+        display: flex;
+        .mark{
+          font-size: 5.625rem;
+          color: #B4B4B4;
+          width: 2.875rem;
+          margin-left: 1rem;
+          margin-right: 1rem;
+        }
+        p{
+          display: block;
+          width: 490px;
+          padding-top: 1.5rem;
+          line-height: 1.8rem;
+        }
+      }
+      ul{
+        margin-top: 1.7rem;
+        margin-bottom: 5rem;
+        li{
+          margin-bottom: .3rem;
+          line-height: 1.5rem;
+        }
+      }
+      a{
+        display: block;
+        text-decoration: underline;
+        color: #F5A623;
+        margin-bottom: 3rem;
+      }
+    }// article
+
+
+
+    section{
+      & h3{
+        font-size: 2rem;
+        padding-bottom: 1.875rem;
+
+      }
+      .blog-item{
+        display: flex;
+        position: relative;
+        margin-bottom: 1.75rem;
+        & img{
+          width: 210px;
+          object-fit: cover;
+        }
+        .category{
+          width: 80px;
+          height: 28px;
+          background: #1B224C 0% 0% no-repeat padding-box;
+          border: 1px solid #707070;
+          position: absolute;
+          font-size: .75rem;
+          color: #FFFFFF;
+          text-align: center;
+          padding-top: .1rem;
+        }
+        .blog-info{
+          margin-left: 2rem;
+          width: 348px;
+          & time{
+            display: inline-block;
+            margin-bottom: 1.8125rem;
+          }
+          & h4{
+            font-size: 1.125rem;
+            line-height: 1.7rem;
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+  }// main
+
+
+
+  .side-bar{
+    width: 269px;
+    .relation{
+      .rl-article{
+        width: 269px;
+        height: 63px;
+        background: #1B224C 0% 0% no-repeat padding-box;
+        border: 1px solid #707070;
+        color: #FFFFFF;
+        p{
+          font-size: 1.3125rem;
+          font-weight: bold;
+          padding-top: 1rem;
+          text-align: center;
+        }
+      }
+      .rl-detail{
+        margin-top: 1.875rem;
+        display: flex;
+        margin-bottom: 2.625rem;
+        div{
+          width: 100px;
+          height: 70px;
+          background: #D5D5D5 0% 0% no-repeat padding-box;
+        }
+        p{
+          font-size: .75rem;
+          width: 152px;
+          margin-left: 1rem;
+          line-height: 1.5rem;
+          text-decoration: underline;
+        }
+      }
+    }// relation
+    .category-list{
+      .cate-title{
+        margin-bottom: 3rem;
+        width: 269px;
+        height: 63px;
+        background: #1B224C 0% 0% no-repeat padding-box;
+        border: 1px solid #707070;
+        color: #FFFFFF;
+        p{
+          font-size: 1.3125rem;
+          font-weight: bold;
+          padding-top: 1rem;
+          text-align: center;
+        }
+      }
+      li{
+        font-weight: bold;
+        margin-bottom: 1rem;
+      }
+    }
+
+
+  }// side-bar
 }
