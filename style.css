@@ -1262,6 +1262,59 @@ a, a:visited, a:hover, a:active {
   border: none;
 }
 
+.top-pic-news {
+  padding-top: 80px;
+  background: transparent url("images/news.png") 0% 0% no-repeat padding-box;
+  background-position: center;
+  background-size: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 301px;
+}
+
+.top-pic-news h2 {
+  margin-top: 5rem;
+  font-size: 2rem;
+  color: #FFFFFF;
+  text-align: center;
+}
+
+.news-detail .news-detail-1 {
+  width: 900px;
+  margin: 0 auto;
+  margin-bottom: 4.0625rem;
+}
+
+.news-detail .news-detail-1 h2 {
+  margin-top: 3.625rem;
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 3.75rem;
+}
+
+.news-detail .news-detail-1 .news-wrap {
+  width: 100%;
+}
+
+.news-detail .news-detail-1 .news-wrap .news-sentence {
+  height: 4rem;
+  width: 100%;
+  border-top: 1px solid #D5D5D5;
+  border-bottom: 1px solid #D5D5D5;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-top: 1.3rem;
+}
+
+.news-detail .news-detail-1 .news-wrap .news-sentence time {
+  margin-right: 2rem;
+}
+
+.news-detail .news-detail-1 .news-wrap .news-sentence p {
+  text-decoration: underline;
+}
+
 @media (max-width: 538px) {
   h1 {
     font-size: 2rem !important;
