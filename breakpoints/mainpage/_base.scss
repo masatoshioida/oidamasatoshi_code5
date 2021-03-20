@@ -1431,3 +1431,34 @@ a, a:visited, a:hover, a:active {
 .footer{
   height: auto;
 }
+
+
+
+
+
+
+
+// ----------------//
+// 以下、contact.htmlのスタイル
+.top-pic-send{
+  padding-top: 80px;
+}
+
+.send-message{
+  height: auto;
+  width: 900px;
+  margin: 0 auto;
+  text-align: center;
+  p{
+    margin-top: 5.1875rem;
+    line-height: 2rem;
+    margin-bottom: 5.1875rem;
+  }
+
+  & a{
+    text-decoration: underline;
+    margin-bottom: 5.0625rem;
+    display: block;
+  }
+
+}

@@ -1458,6 +1458,29 @@ a, a:visited, a:hover, a:active {
   height: auto;
 }
 
+.top-pic-send {
+  padding-top: 80px;
+}
+
+.send-message {
+  height: auto;
+  width: 900px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.send-message p {
+  margin-top: 5.1875rem;
+  line-height: 2rem;
+  margin-bottom: 5.1875rem;
+}
+
+.send-message a {
+  text-decoration: underline;
+  margin-bottom: 5.0625rem;
+  display: block;
+}
+
 @media (max-width: 538px) {
   h1 {
     font-size: 2rem !important;
