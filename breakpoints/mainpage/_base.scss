@@ -1366,7 +1366,7 @@ a, a:visited, a:hover, a:active {
 }
 
 .contact-detail{
-  width: 700px;
+  max-width: 700px;
   margin: 0 auto;
   .contact-form{
     margin-top: 3.625rem;
@@ -1480,14 +1480,14 @@ a, a:visited, a:hover, a:active {
 
 
 // ----------------//
-// 以下、contact.htmlのスタイル
+// 以下、send.htmlのスタイル
 .top-pic-send{
   padding-top: 80px;
 }
 
 .send-message{
   height: auto;
-  width: 900px;
+  max-width: 900px;
   margin: 0 auto;
   text-align: center;
   p{
