@@ -307,3 +307,50 @@ html{
     }
   }
 }
+
+
+
+// blog_detail.html-------------------
+
+.all-wrap{
+  main{
+    section{
+      .blog-item{
+        & img{
+          width: 150px !important;
+        }
+        .category{
+          width: 70px;
+          height: 24px;
+          padding-top: .3rem;
+        }
+      }
+    }
+  }
+
+
+
+  .side-bar{
+    flex-direction: column;
+    .relation{
+      width: 100% !important;
+      margin-bottom: 2rem;
+      .rl-article{
+        width: 50% !important;
+      }
+      .rl-detail{
+        a{
+          width: 100%;
+        }
+      }
+    }
+    .category-list{
+      width: 100% !important;
+      margin-bottom: 2rem;
+      .cate-title{
+        width: 50% !important;
+        margin-bottom: 1.7rem;
+      }
+    }
+  }
+}

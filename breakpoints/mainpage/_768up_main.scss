@@ -543,6 +543,49 @@ html {
 }
 
 
+
+
+// blog_detail.html---------------------
+
+.all-wrap{
+  flex-direction: column;
+  width: 90%;
+  margin: 0 auto;
+  main{
+    max-width: 100%;
+    margin-right: 0px;
+  }
+
+
+  .side-bar{
+    margin-top: 4rem;
+    display: flex;
+    max-width: 100%;
+    justify-content: space-between;
+    .relation{
+      width: 270px;
+      .rl-article{
+        width: 80%;
+        height: 50px;
+        p{
+          // font-weight: normal;
+        }
+      }
+    }
+    .category-list{
+      width: 270px;
+      display: block;
+      .cate-title{
+        width: 80%;
+        height: 50px;
+      }
+    }
+  }
+}
+
+
+
+
 // news.html-----------------------
 
 

@@ -1521,10 +1521,10 @@ a, a:visited, a:hover, a:active {
   padding-top: 3.75rem;
   padding-bottom: 4.3125rem;
   display: flex;
-  width: 895px;
+  max-width: 895px;
   margin: 0 auto;
   main{
-    width: 590px;
+    max-width: 590px;
     margin-right: 2.25rem;
     article{
       .category{
@@ -1580,7 +1580,7 @@ a, a:visited, a:hover, a:active {
         }
         p{
           display: block;
-          width: 490px;
+          max-width: 490px;
           padding-top: 1.5rem;
           line-height: 1.8rem;
         }
@@ -1614,7 +1614,7 @@ a, a:visited, a:hover, a:active {
         position: relative;
         margin-bottom: 1.75rem;
         & img{
-          width: 210px;
+          max-width: 210px;
           object-fit: cover;
         }
         .category{
@@ -1630,7 +1630,7 @@ a, a:visited, a:hover, a:active {
         }
         .blog-info{
           margin-left: 2rem;
-          width: 348px;
+          max-width: 348px;
           & time{
             display: inline-block;
             margin-bottom: 1.8125rem;
@@ -1655,10 +1655,10 @@ a, a:visited, a:hover, a:active {
 
 
   .side-bar{
-    width: 269px;
+    max-width: 269px;
     .relation{
       .rl-article{
-        width: 269px;
+        max-width: 269px;
         height: 63px;
         background: #1B224C 0% 0% no-repeat padding-box;
         border: 1px solid #707070;
@@ -1675,7 +1675,7 @@ a, a:visited, a:hover, a:active {
         display: flex;
         margin-bottom: 2.625rem;
         div{
-          width: 100px;
+          max-width: 100px;
           height: 70px;
           background: #D5D5D5 0% 0% no-repeat padding-box;
         }
@@ -1698,7 +1698,7 @@ a, a:visited, a:hover, a:active {
     .category-list{
       .cate-title{
         margin-bottom: 3rem;
-        width: 269px;
+        max-width: 269px;
         height: 63px;
         background: #1B224C 0% 0% no-repeat padding-box;
         border: 1px solid #707070;
