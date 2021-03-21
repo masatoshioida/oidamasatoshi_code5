@@ -56,6 +56,9 @@ html{
         .second-content,
         .third-content {
           height: auto;
+          p{
+            line-height: 1.7rem !important;
+          }
           // margin-bottom: 6.5rem;
           .second-content-wrapper{
             flex-direction: column;
@@ -313,6 +316,7 @@ html{
 // blog_detail.html-------------------
 
 .all-wrap{
+  padding-bottom: 3rem;
   main{
     article{
       .quote{
@@ -351,12 +355,13 @@ html{
       .rl-detail{
         a{
           width: 100%;
+          padding-right: 2rem;
         }
       }
     }
     .category-list{
       width: 100% !important;
-      margin-bottom: 2rem;
+      // margin-bottom: 2rem;
       .cate-title{
         width: 50% !important;
         margin-bottom: 1.7rem;

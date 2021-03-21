@@ -130,6 +130,12 @@ html {
     }
     .contact-time {
       margin: 0 0 0 auto;
+      a{
+        text-align: right;
+      }
+      .call::after{
+        left: .1rem;
+      }
     }
     a.button1 {
       width: 6.4rem;
@@ -293,7 +299,8 @@ html {
               width: 100%;
               max-width: 40px;
               height: 100%;
-              padding-left: .8rem;
+              text-align: center;
+              padding-left: 0rem;
             }
             .fb-info{
               & h4{
@@ -389,7 +396,7 @@ html {
       & a.rq{
         margin-top: 2rem;
         width: 12rem;
-        padding-top: 1.2rem;
+        padding-top: 1.5rem;
         border-radius: 10px;
       }
       & a.ct{

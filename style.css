@@ -1863,6 +1863,11 @@ a, a:visited, a:hover, a:active {
   .main-contents .main-container .first-contents .first-container .third-content {
     height: auto;
   }
+  .main-contents .main-container .first-contents .first-container .first-content p,
+  .main-contents .main-container .first-contents .first-container .second-content p,
+  .main-contents .main-container .first-contents .first-container .third-content p {
+    line-height: 1.7rem !important;
+  }
   .main-contents .main-container .first-contents .first-container .first-content .second-content-wrapper,
   .main-contents .main-container .first-contents .first-container .second-content .second-content-wrapper,
   .main-contents .main-container .first-contents .first-container .third-content .second-content-wrapper {
@@ -2052,6 +2057,9 @@ a, a:visited, a:hover, a:active {
     height: 6rem;
     padding-top: .5rem !important;
   }
+  .all-wrap {
+    padding-bottom: 3rem;
+  }
   .all-wrap main article .quote {
     height: 8rem;
   }
@@ -2081,10 +2089,10 @@ a, a:visited, a:hover, a:active {
   }
   .all-wrap .side-bar .relation .rl-detail a {
     width: 100%;
+    padding-right: 2rem;
   }
   .all-wrap .side-bar .category-list {
     width: 100% !important;
-    margin-bottom: 2rem;
   }
   .all-wrap .side-bar .category-list .cate-title {
     width: 50% !important;
@@ -2234,6 +2242,12 @@ a, a:visited, a:hover, a:active {
   }
   .header .header-inner .contact-time {
     margin: 0 0 0 auto;
+  }
+  .header .header-inner .contact-time a {
+    text-align: right;
+  }
+  .header .header-inner .contact-time .call::after {
+    left: .1rem;
   }
   .header .header-inner a.button1 {
     width: 6.4rem;
@@ -2468,7 +2482,8 @@ a, a:visited, a:hover, a:active {
     width: 100%;
     max-width: 40px;
     height: 100%;
-    padding-left: .8rem;
+    text-align: center;
+    padding-left: 0rem;
   }
   .main-contents .main-container .third-contents .third-container .first-block .fb-item .fb-info h4 {
     max-width: 130px;
@@ -2544,7 +2559,7 @@ a, a:visited, a:hover, a:active {
   .footer .upper-footer .upper-upper a.rq {
     margin-top: 2rem;
     width: 12rem;
-    padding-top: 1.2rem;
+    padding-top: 1.5rem;
     border-radius: 10px;
   }
   .footer .upper-footer .upper-upper a.ct {
