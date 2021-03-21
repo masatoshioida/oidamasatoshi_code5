@@ -1195,7 +1195,7 @@ a, a:visited, a:hover, a:active {
 
 .blog-detail{
   .blog-detail-1{
-    width: 900px;
+    max-width: 900px;
     margin: 0 auto;
     h2{
       margin-top: 3.625rem;
@@ -1209,7 +1209,7 @@ a, a:visited, a:hover, a:active {
       position: relative;
       margin-bottom: 5.8125rem;
       & img{
-        width: 240px;
+        max-width: 240px;
         object-fit: cover;
       }
       .category{
@@ -1254,6 +1254,8 @@ a, a:visited, a:hover, a:active {
 
 
 .page-nation{
+  max-width: 900px;
+  margin: 0 auto;
   .page-wrap{
     display: flex;
     justify-content: center;

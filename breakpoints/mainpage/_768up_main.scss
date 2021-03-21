@@ -478,6 +478,14 @@ html {
 
 // price.html---------------
 
+.top-pic-price{
+  padding-top: 60px;
+  h2{
+    margin-top: 7rem;
+  }
+}
+
+
 
 .pan{
   .pan-wrap{
@@ -504,6 +512,32 @@ html {
   white-space: nowrap;  /* 横スクロールの指定 */
   // overflow-scrolling: touch;  /* スクロールを滑らかにする */
   -webkit-overflow-scrolling: touch;  /* スクロールを滑らかにする */
+    }
+  }
+}
+
+
+
+
+// blog.html------------------------
+.top-pic-blog{
+  padding-top: 60px;
+  h2{
+    margin-top: 7rem;
+  }
+}
+
+.blog-detail{
+  .blog-detail-1{
+    width: 90%;
+  }
+}
+
+.page-nation{
+  .page-wrap{
+    .num{
+      width: 40px;
+      height: 40px;
     }
   }
 }

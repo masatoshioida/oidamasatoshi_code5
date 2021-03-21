@@ -1195,7 +1195,7 @@ a, a:visited, a:hover, a:active {
 }
 
 .blog-detail .blog-detail-1 {
-  width: 900px;
+  max-width: 900px;
   margin: 0 auto;
 }
 
@@ -1215,7 +1215,7 @@ a, a:visited, a:hover, a:active {
 }
 
 .blog-detail .blog-detail-1 .blog-item img {
-  width: 240px;
+  max-width: 240px;
   -o-object-fit: cover;
      object-fit: cover;
 }
@@ -1253,6 +1253,11 @@ a, a:visited, a:hover, a:active {
 
 .blog-detail .blog-detail-1 .blog-item .blog-info p {
   line-height: 1.6rem;
+}
+
+.page-nation {
+  max-width: 900px;
+  margin: 0 auto;
 }
 
 .page-nation .page-wrap {
@@ -2016,8 +2021,8 @@ a, a:visited, a:hover, a:active {
   .pan .pan-wrap {
     padding-top: 1.3rem !important;
   }
-  .top-pic-price h2 {
-    margin-top: 7rem;
+  .top-pic-price h2, .top-pic-blog h2 {
+    margin-top: 8.5rem !important;
   }
   .price-detail .price-detail-1 .enter-price-wrap .plus {
     margin: 0 1.5rem 0 1.5rem;
@@ -2027,6 +2032,17 @@ a, a:visited, a:hover, a:active {
   }
   .price-detail .price-detail-2 .price-scroll .plan-wrap .plan:nth-child(3) .plan-title {
     height: 72px;
+  }
+  .blog-detail .blog-detail-1 .blog-item {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .blog-detail .blog-detail-1 .blog-item .blog-info {
+    margin-top: 1rem;
+    margin-left: 0px;
+    width: 100%;
   }
 }
 
@@ -2525,6 +2541,12 @@ a, a:visited, a:hover, a:active {
   .footer .bottom-footer .bottom-bottom p {
     text-align: center;
   }
+  .top-pic-price {
+    padding-top: 60px;
+  }
+  .top-pic-price h2 {
+    margin-top: 7rem;
+  }
   .pan .pan-wrap {
     padding-top: 1.1rem;
   }
@@ -2543,6 +2565,19 @@ a, a:visited, a:hover, a:active {
     /* 横スクロールの指定 */
     -webkit-overflow-scrolling: touch;
     /* スクロールを滑らかにする */
+  }
+  .top-pic-blog {
+    padding-top: 60px;
+  }
+  .top-pic-blog h2 {
+    margin-top: 7rem;
+  }
+  .blog-detail .blog-detail-1 {
+    width: 90%;
+  }
+  .page-nation .page-wrap .num {
+    width: 40px;
+    height: 40px;
   }
 }
 

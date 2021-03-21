@@ -235,9 +235,9 @@ html{
   }
 }
 
-.top-pic-price{
+.top-pic-price, .top-pic-blog{
   h2{
-    margin-top: 7rem;
+    margin-top: 8.5rem !important;
   }
 }
 
@@ -269,3 +269,28 @@ html{
   }
 
 }
+
+
+
+
+// blog.html-----------------------
+
+
+.blog-detail{
+  .blog-detail-1{
+    .blog-item{
+      flex-direction: column;
+      // & img{
+      //   max-width: 100% !important;
+      // }
+      .blog-info{
+        margin-top: 1rem;
+        margin-left: 0px;
+        width: 100%;
+      }
+    }
+  }
+}
+
+
+
