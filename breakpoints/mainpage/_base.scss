@@ -1735,7 +1735,7 @@ a, a:visited, a:hover, a:active {
 }
 
 .news-article{
-  width: 900px;
+  max-width: 900px;
   margin: 0 auto;
   h1{
     font-size: 1.75rem;

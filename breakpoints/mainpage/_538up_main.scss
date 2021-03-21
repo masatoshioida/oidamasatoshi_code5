@@ -314,6 +314,16 @@ html{
 
 .all-wrap{
   main{
+    article{
+      .quote{
+        height: 8rem;
+        p{
+          padding-right: .5rem;
+        }
+      }
+    }
+
+
     section{
       .blog-item{
         & img{
@@ -351,6 +361,24 @@ html{
         width: 50% !important;
         margin-bottom: 1.7rem;
       }
+    }
+  }
+}
+
+
+
+// news-detail.html-----------------
+.news-article{
+  .quote{
+    height: 8rem;
+    p{
+      padding-right: .5rem;
+    }
+  }
+  .in-pic{
+    width: 100%;
+    img{
+      width: 100%;
     }
   }
 }
