@@ -1308,7 +1308,7 @@ a, a:visited, a:hover, a:active {
 
 .news-detail{
   .news-detail-1{
-    width: 900px;
+    max-width: 900px;
     margin: 0 auto;
     margin-bottom: 4.0625rem;
     h2{
@@ -1323,16 +1323,19 @@ a, a:visited, a:hover, a:active {
         height: 4rem;
         width: 100%;
         border-top: 1px solid #D5D5D5;
-        border-bottom: 1px solid #D5D5D5;
         display: flex;
         padding-top: 1.3rem;
         time{
           margin-right: 2rem;
+          width: 85px;
         }
         a{
           text-decoration: underline;
+          // width: 100%;
         }
-
+      }
+      .news-sentence:nth-child(10){
+        border-bottom: 1px solid #D5D5D5;
       }
     }
 

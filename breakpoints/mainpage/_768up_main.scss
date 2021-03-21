@@ -541,3 +541,23 @@ html {
     }
   }
 }
+
+
+// news.html-----------------------
+
+
+.news-detail{
+  .news-detail-1{
+    width: 90%;
+    .news-wrap{
+      .news-sentence{
+        padding-top: .3rem;
+        line-height: 1.7rem;
+        // height: 6rem;
+        a{
+          width: 90%;
+        }
+      }
+    }
+  }
+}
